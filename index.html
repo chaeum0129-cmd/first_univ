@@ -1,0 +1,3145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제과제빵·베이커리 대학 입시 및 통학 가이드 (수강생 전용)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#090D16',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons (파일 내장) -->
+    <style id="fa-embedded">
+        /* Font Awesome Free 6.4.0 (아이콘 글꼴 내장본 · 라이선스: https://fontawesome.com/license/free) */
+        @font-face { font-family: "FAEmbedSolid"; font-weight: 900; font-display: block; src: url(data:font/woff2;base64,d09GMgABAAAAABGMAAoAAAAAJywAABFBAwQBAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAglQKwyCxcwE2AiQDgSQLVAAEIAWDGAcgG3wdUZST1o6A/EiwbRetFbpU+eCRBGzdj5Bk9uf5bf65D1Tk8XioPJAH+6ADEQNZBWXOlbIRa13B1s5VPZdJ6v/Kwskyf4Dbj1qm/kpZJYd6JWuzngq/jB/n8vt2Lrk5ZrePCoCSZgjGtvZqA4fcEcHfL3P2Snp13RPhqE14jHn7f7LtJ7fLXsqVlJ1Nae2nU5tEMigGxaA2/QplKa1qLI5BMZ7xYDFaYXOYRYHu75DncMmeIy2uXvtjqSCooHjJ3wGwMRZrBcQBoP7ICQAlX2nPwYYVLRgksuBrJyQAj2bH4AHAQParFSgSiwB4BUytzJCKeqBGTQEATBSAJAgnQZfCRm2F/jv+veOAB9m/Xo9iUSKaEpVE20et0SHRYdHR0UnRmdEV0U3RrVFPdFf0QPRQ9J/Hnzzp/mTgk/+esp9+9fS/Z7efY8/jng99Pu759OfBl/++WhGLAfBbP45AFDTt/1KxW9I8ASJfkk/I/8hfyRPkMfIouZ/cRdaR68llJEMuJqvICaSLzOYvIFqJH4hcQsxz8HR4Cf4RLuN+xw1zT3FXcXol7AYEP0TjzINMTAguj+TZA9fUI+AC5ksxYF34EtAqcWqdESRCPLAuIc6smMgOeY6wcDwa7iwV8TRMJ+JSOstCKNsl8hQ0LaFJWpSspHHKJxyvFN2cEh4vvRTHOXwOLmpiUpJwGCTaEUndkjNFRCe2kJ0iJXAcJ/jSujGuWZacnEHTKcRHtFDMKSVSUzOSyYs8ma3hsKVJJI9Ib59yzDe8RoS83HVCN0CeyVAeHM9cL/YhBE3AfwYXDd8tRO5ULEB5VDiqE/vUjZRHAniT9Jq9Ju9wNqoVeTN4Np8Y91DgFnK9IuSoHO0T41axT5LqlQxd3wt9mncY1WgP9TzHXdf9TM4BYHIP9jiLo0aJX7mHrlMjAhx/a2NvmGweYIRu7jqR/UfrrUHX7LcHX3fctFy1WVk5XT70D5EMEq12b6LN6k502Dwd7A6XR9i7A14fqf5UodvqRH13KxWks5u7LsMrSt+T0acG5FlUS3vFRi+qERu84jqp2Gd1VGmTuj3pNOHrVR4qrVHVbwL9GBWQWE/nHdYe6noi50DuwS4uTVAjwYOw+UZoHA3ZnYlCqRDQ7FURTdn7pag2a18Gt3foVZNl4I6WSd1wwFE9ZKDricyQrD/aZQyXfKX/PA3wxo0rSMCfGVLy9vigUV32fjU+1gOIEVplhgatOOz5c/Hh6ymb7XYZulxwAdXknx94yX6j/4+mCDDm5gEXbcOaVHqjpgRSe+tTdmcYeqfUSo2GSRLJw61d/CBhtlock2yq2XHEnUUD3igBfEq4XuNYTyHV5g6RjNUbJap83vcZHpy4JtmPxmqUgLR4JJq1RoxmTHVAhndXBLgoUAUvdcJb9bkIA1YC8wvdSt4ekZdm2cBD4VcK8oq4e+FV3nGn4oFV4laxdRh7ezC67li9fm+UX7EyEqsbIKDCm6To7xzrxcZG3NEoCaROQa6VSrVrnRBtXGr21BbGu9ev9UQmCsmwTzR7uxCns5O3QzhebZfg4JTkULzTQ0YQ4gTBInLXnJouDZeyCQFxJoJrz6pk3nxqvDLeaM/8vTmEeym5XnznB4rzs2xtPOlb7dhh6I/DldFChySQQOJy9/1VUy5T84ZITxbeHM/WW79tR++QwKHqm0/FRx94jpcvOAr82JLK36tFjtcvBSuu/ZpKjz8r5dVrRrs/PaFU+FIjvbx4NWAI8mrTxR71RJnc5Hs1DkP3q6PpWhOhWD2UT6HKJvyxGKGZ+cZ580OwWxk2oW86nuBwxZ+JE88lA/1uOcT5ce7kBFYPO3/cIWTniK9W9nmb/6usBiJsdXEJp/1pUCsJyrU499KVvNTARB1MDYon0qVxM5GqQEPDWBWThTLYISBNv2K7MVRDZbuPQ4xMgDrigl6aR+DX0UjzV9wiSyQ+/w+B14FQ3c4zhQJIHMyNY0Dxw2e/tFo9Rzj6PpxPXJ3EDeoRpGMRYYUw7Y7/+O8uguWPlpXoMDt7OqdDpaOBrllKAGf4BzlVbn+fhR3LgdO1+3PFNqwTOj8CxKuXmTICqRD/YLHTT2QcIPQBkw4bIuUzl5xRLNy8rBUEwhsRx/3jiueRP/S/rc3Sq6zlKhDCZUlDwSy1hE4n1rDThplQKR0CzanlVlWOvtvniplCujNfypbtfoeFdAs5I59bS43n7n9iumt+GVNGy3lY76QxrcOIW8BdgDRw2mjfM1fM+P5CuuNU5U2qzZeygZod2OsYKqKWfQY55AEnidJgh1vcPwCXjR0vnGXgBxwBfhxc61BIbe7ViBacrG72Z+sJPNeoWKYaM5C22NGawiqkvVR2rzoWC3eOWH1iz6wy2GVxKdlS4tOWooxiprN5cfuAy499Hio1mHr9hwbMrBUpRBsFTpTV4g6xqXPuY5nz1nSQtOQbJhz8fqA6dhR8Up8IQ4EkXQL1V2D0ALQjla0XptGyiwXWJ1SRgcUeKeKq2MjUcShyWw0uqIvnGqRV53JKJDUkdalJJV63VOkSM9+ouNRn6i1upMHR8mDRCwyXxithL7NU8ZjGmKpeJPcG8rsPqyqZ6jtiGk2t1UtNI8wHp09vuCVpRNJ8hsSFuH0aKP7NdOlcnqVc5gugolI23zc59yY4riY4G7s7fGWw8/hO7kIoLs4xoMJhzbvHI9xCVdoCqdaTW+YiO8o2nIzaIfoI7+2XNKoddbR9jzJu0nMRwAEtjJ31Ln8OOrCImd079mkPmY2+3eho84lrkA8ZFweFue/zsMYEJB4KrG7RcWPIYdtfAHbUrNmLr8+2N0nr6NoMmdsvCaiGnypEX/ZHPyruckS42ZSJJlak6H6n886Bl4q/7my7vyPeO6saD5XLOqftWB4MWbM9hhsVNh4WALaNTeevgTV8Byxv2eInXfYFeWHdA7jICrIuPtBVljuoAM9ZXll5JQ3102DYnTPQoQqyjd+qaOUrQth0koUdVUZit3R488SUnloa1BhgHdIyMtI6YJg6pWJDpYWiLH/5Lb2mcvyuDw1tUDRuyeK1BLHWP/T8i5cUF4ED7duHiHcIQ7h2Ypc383WAPXN7PiR5wkRDJcSPucQJfkLMu4a2VH3gtJQgpKcD+tFMScMXtddnGOed1f/cSSQquKY/O88443rtpc0lTKUhcErWMmzzpaj5Z8LPzF+woRszui0UmeNwzInkFSBv0Ff50z6lvStLl5ZhsiMDzMPTFmMwCZK4Cm5SUpBJ8uIS4x90lNDpPzqnd5PaQ8DmPF1Qh+zjBYLxdhTTefNWNzevnifTCcgsEcnkKwXQ9ZZYisPhzuW9IWM7hrpHiBm3sAW29pIVFMh6bd2SMicddcrLCeL//wniyhUPOqY2JVq1Srt0qZLYU5k2LU3pq0F9ONWUOkle55QhnKJY7orVl2XI/XXDqdC8jmhoUKetE3qPTgqHa0q9qoyFqrrh7Djylp7sS8PQcgWjiESxh9y6iG47YQS02SOCLYZwZwuMZYptsRdTVTaTT/b7BMnN2E2mk32hrKIvQiBAnvSNkDLcWTY/GHRyy+WkZGb+XZjrBJ9MHes9tn37scq8AozheZUP/u5b0ZR/+93gKZFgNqBNLhgPdmRaWaIp2apaQFjXamrlmzwFe1rYHG7VPbgo5CRMslBQaC5XkGbzH+z9B0jBvn0CuqUtEkQa8fzIA/vZf5jNckG5GQopy6QEjvDiA92o6db4/EePiArFnGRMV79RUUHkUDNm1WHYKti9Z9RXcPNnh3ivDBb1GmeMfPBei6C5VuzQjhzxW4U6pKzq41+7IiF/nboCrp3xn7+e8+HqNf/a3HZt5/U5a//9d22O/sL/7XLX+q9d/ZBz/bz/4sWuiN7/h/5/IfTBg43Pt81z6RJUhNO057RpmePywiWhsmRh/X6ny2eRo2cf+fq0y3NklfgJyQ8G+eQT8aqrs1ynvz4yG7UvkbfENPK5DxDdrqjXKGJ5lrNdha+D42XuWeALtDWXlLm4uHPuTjm/bcoHWRBmLxmvQ1urPHFxf0Go3diQghTYD5meF/z99Onfg/n3AWkkXoAGWLDgHmc5zcu5t2A+AnjBD5YtXQsuQVBwKWVlFlolP7RFPcRoaXwVMDbwjovH/U6Sv7tXgSxbua25WK2ujvUOKhAlms8WLZcQuzLuf6y/PkX/9ce91RfrexznkcCEzGh4rtQKNgtYwGaV8rds7BiXnPx8U0d9pVARZvbBPg6wh05UPSxSUVWZxBon41xDZFZRqqKHqolD2cDZt48BecVULcBXCuuPbgi/ly9tYGTRWr3apA4uTC61BNWm1dVVBzONWeq7ybeULGQPFVEVUDWK+lE7Fwuii7xevaKGUkWZ+30WbsWPXrwB5VBR0X7gZWDVQUY3T8dMreTJFjtUTnVOZUwWWQTbXG+qMLbyDb/2X1nRh0kHoKYGkmlJytw0upEOxcV//vVhfPpcfSBwfW568Ye//sI93e4YdIHzb7gnQxabzUIxyGa7Ddm9v52uYB2fXyeu1mnlcq0ueYBYOGHQZ2Xx9YeEWFKh9dGacs22rLq6EyLIEKwOEx6qj+95pkEJBQsK0sfbXv2lPVwKEKtI/A/eZ0GPFvuMkXPSmH37ONq4aOGluPX1vyAaMl+eCcUVEega69bYOyWB13+xe/d3/ybCLz/+7LcJcS3AXWN3JzTFz+PeFybTN+oUDBP25/eI61xQXl7QOa7HazM5ML6oC0eRUFQUn9SV/AZYSl+fScXsz4r7nT27zvUZW37nz3hizRpiWTIU/+cdObSE20cg0o5ITyfaRSLtUyrecktflAbJqC+xeh4xeWMyw2K9MsOIkcYBuXQmXawok+u0KwXL3Ik8LR3wK273t97uajeHHtF5wNy8myScCX110758uf3mV6EzQN6sQvb8XTZxHxhKfzZKBQfP0jS9EjeLtm3rs6KHRCTEhxzdsePoEFwo0mhW9Nm+lbLgK6VNNmlK0WgoyrQjaAfUZZGZhtKjz/Jcs2e7ePn98V9nORFaVqCxAKJnVSuHdN/ClMBcxl6iftkrf9fVs2gEFk3BMoSynOoSOzMXihO3dAe0K7VG2FKqbvnQvt//FsJiWX1ulXAQDvzZ5akzxp8768k+5v3xxwm6mQo9tjHsNt9iHAgMNwmSgkHm4WKY0O1ASahqI3VglpK6aU47KZeVeVCIYKjOaVcYRF4KnzHEkoLqmFWHng2HWlt1E3i7JyxtCMZ8JbgSlMtgBtuemGhnz1imVOLYISsU69+KJZSVliIEaGbul6u8PJK8uaVHHqXvMrO09N2SjhdWeQg+eWuB7vPmyfA63PU8TMbEYkx9/ESeI9ag+Bw+xwDTDks8cudgUYhHBnj3Wgz7/HMF+KgAnx9wVKzDeWtDRyL+p1qhtNU+9UeOhNYi/Dq8vOmk4o0rSoz54VwxE0xSEBjUynkjwAa9bSEAAD8WQY9RBIDDMTi3GcXQBkSIkjkY04oxGGNdQiItm8nYBRQNBRHKAsaZmc6C2CVqQ0ec1VTwbYm0cn4WBMBiI8h+dsNXQfZ+zsExAABozR9HOY6rGzjQANHl/nsKEDn2ysAj2Fjv0iCmlQwCJUDGVARF5OZjgEkHZAITxrJQ1nFBMtWoloThih1XwhjsJJKLyPzlgiTgRpVIwrgzNSwFUMdB8ANdjmHAwkLZiebOubVsBB2hczYGXHBms8AAVXuyfXYcjINDDxoPOSgZCmA6VMF8qIaJ4IIJMAsUkAljQRMJxSiZBmtvhrkwHmYqP3VODgODdKXjqzN8CYORc6bARBhXnm5qIRdzaqHz6tSBHRWqd5GJfICEbkY64up10Al6eKFrhXSZxST72nsOH77nSfchaSjHeUhdR7dyrp0FP7uK3QcJAA==) format("woff2"); }
+        @font-face { font-family: "FAEmbedRegular"; font-weight: 400; font-display: block; src: url(data:font/woff2;base64,d09GMgABAAAAAAH8AAoAAAAABCwAAAGwAwQBAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqBGIERATYCJAMICwYABCAFgygHIBtuA0AuCuyGM4dIq18jCBHGHOushxeGPh7+W3u9b3YCVABMeAPkSsDHV6MlVkSqwn2hK9QXtqR3YJ5DV7OrkKpx5vr0Bt6uuF1fzoiD28GSUouCLHfigR8HHmnk39bjY2RJBZbKW22BBRJQooGm2wQPD7HY4chlNCHHr3ikgdgVHcDWrfw33z2ShgLANDhq/d/6/x7+PRy1ClGzDiAgJuMTloGEArMUArNky5Blwe/hqkpGdhDdAchIKDEMyIC0tuXkmzUfCa0fO78SpNdd39SOLz0/6CLiTfd3rTViIQ51QM9mtb+YU7z8sv37u7PzLT69dVqptYhvC2aUxUan7X1kXP1yDlJfV0cAQZHD/Z/P1OR/c1sC9Q2XphpTSbcCmiUQfE5Kt0g7gAdS3CJqCKS80jgI0JqcAIvcghEYwpgRJFPcQGGDT5270OCS3781KrPERrvD12XUGzwIOl1kWmaL3eZBsN5b67ZbtSciGNPJpeV3Dmj1nhali5e45VddY/qN6Fc6onW5jXYbwbhxQ/qVSsMmlcYMGbVM57z25uojy2ZQlzLnwXuhy2UYfFXmAwAAAA==) format("woff2"); }
+        .fa-solid, .fa-regular { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; line-height: 1; text-rendering: auto; }
+        .fa-solid { font-family: "FAEmbedSolid"; font-weight: 900; }
+        .fa-regular { font-family: "FAEmbedRegular"; font-weight: 400; }
+        .fa-arrow-down-short-wide::before { content: "\f884"; }
+        .fa-arrow-right::before { content: "\f061"; }
+        .fa-arrow-up-right-from-square::before { content: "\f08e"; }
+        .fa-award::before { content: "\f559"; }
+        .fa-bread-slice::before { content: "\f7ec"; }
+        .fa-building-circle-exclamation::before { content: "\e4d3"; }
+        .fa-calendar::before { content: "\f133"; }
+        .fa-calendar-days::before { content: "\f073"; }
+        .fa-certificate::before { content: "\f0a3"; }
+        .fa-chevron-right::before { content: "\f054"; }
+        .fa-circle-check::before { content: "\f058"; }
+        .fa-circle-exclamation::before { content: "\f06a"; }
+        .fa-circle-info::before { content: "\f05a"; }
+        .fa-circle-xmark::before { content: "\f057"; }
+        .fa-cookie-bite::before { content: "\f564"; }
+        .fa-download::before { content: "\f019"; }
+        .fa-file-export::before { content: "\f56e"; }
+        .fa-file-import::before { content: "\f56f"; }
+        .fa-gear::before { content: "\f013"; }
+        .fa-globe::before { content: "\f0ac"; }
+        .fa-graduation-cap::before { content: "\f19d"; }
+        .fa-key::before { content: "\f084"; }
+        .fa-lightbulb::before { content: "\f0eb"; }
+        .fa-list-check::before { content: "\f0ae"; }
+        .fa-location-dot::before { content: "\f3c5"; }
+        .fa-lock::before { content: "\f023"; }
+        .fa-magnifying-glass::before { content: "\f002"; }
+        .fa-map-location-dot::before { content: "\f5a0"; }
+        .fa-pen::before { content: "\f304"; }
+        .fa-phone::before { content: "\f095"; }
+        .fa-plus::before { content: "\2b"; }
+        .fa-route::before { content: "\f4d7"; }
+        .fa-scale-balanced::before { content: "\f24e"; }
+        .fa-shield-halved::before { content: "\f3ed"; }
+        .fa-train::before { content: "\f238"; }
+        .fa-trash-can::before { content: "\f2ed"; }
+        .fa-trophy::before { content: "\f091"; }
+        .fa-user-graduate::before { content: "\f501"; }
+        .fa-user-lock::before { content: "\f502"; }
+        .fa-user-shield::before { content: "\f505"; }
+        .fa-xmark::before { content: "\f00d"; }
+    </style>
+    <!-- Google Fonts (Noto Sans KR) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style id="app-style">
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        
+        /* Prevent awkward single Korean syllable wrapping */
+        .break-keep { word-break: keep-all; overflow-wrap: break-word; }
+        
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        @keyframes trophy-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+        .animate-trophy { animation: trophy-pulse 2s infinite ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- 🔒 STUDENT ACCESS GATE OVERLAY (수강생 전용 진입 잠금 화면) -->
+    <div id="studentAccessGate" class="fixed inset-0 z-[9999] bg-gradient-to-br from-navy-950 via-slate-900 to-navy-900 text-white flex items-center justify-center p-4">
+        <div class="max-w-md w-full bg-white/5 border border-white/10 backdrop-blur-xl p-6 sm:p-8 rounded-3xl shadow-2xl text-center relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-40 h-40 bg-gold-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gold-400 to-amber-600 text-slate-950 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg text-2xl font-black">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            
+            <span class="inline-flex items-center gap-1.5 bg-gold-500/20 text-gold-400 text-xs font-bold px-3 py-1 rounded-full border border-gold-500/30 mb-3">
+                <i class="fa-solid fa-shield-halved"></i> 수강생 전용 진학 가이드
+            </span>
+            
+            <h2 id="gateAcademyTitle" class="text-base sm:text-xl font-extrabold text-white tracking-tight leading-snug break-keep px-2">
+                퍼스트바리스타제과제빵학원 화성캠퍼스
+            </h2>
+            
+            <p class="text-xs text-slate-300 mt-2 mb-6 leading-relaxed break-keep">
+                본 페이지는 수강생 및 학부모 전용 안내 사이트입니다.<br>
+                학원에서 안내받으신 <b class="text-gold-400">입장 비밀번호</b>를 입력해 주세요.
+            </p>
+
+            <div class="space-y-3">
+                <div>
+                    <input type="password" id="gatePasswordInput" placeholder="입장 비밀번호 입력" onkeydown="if(event.key==='Enter'){event.preventDefault();submitGateLogin();}" 
+                           class="w-full text-center px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:bg-white/20 transition font-mono tracking-widest text-lg">
+                    <p id="gateErrorMsg" class="hidden text-rose-400 text-xs font-semibold mt-2">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> 비밀번호가 올바르지 않습니다.
+                    </p>
+                </div>
+                
+                <button type="button" onclick="submitGateLogin()" class="w-full py-3.5 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-600 hover:to-amber-700 text-slate-950 font-extrabold rounded-xl shadow-lg transition duration-200 flex items-center justify-center gap-2 text-sm">
+                    <span>입장하기</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-slate-400 flex items-center justify-center gap-1.5 break-keep">
+                <i class="fa-solid fa-circle-info text-gold-400"></i>
+                <span>입장 비밀번호를 모르실 경우 학원에 문의해 주세요.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Bar -->
+    <div id="adminTopBar" class="hidden bg-amber-500 text-slate-950 px-4 py-2 text-xs font-semibold shadow-inner border-b border-amber-600">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-navy-950 text-gold-400 px-2 py-0.5 rounded text-[11px] font-bold"><i class="fa-solid fa-user-shield mr-1"></i>관리자 모드 작동 중</span>
+                <span class="text-slate-900 hidden sm:inline">학교 정보, 홈페이지, 전화번호, 주소, 요강 및 커리큘럼 편집 가능</span>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+                <button type="button" onclick="openUniversityFormModal()" class="bg-navy-900 hover:bg-navy-950 text-white px-3 py-1 rounded-lg transition flex items-center gap-1 shadow">
+                    <i class="fa-solid fa-plus text-gold-400"></i> 대학 추가
+                </button>
+                <button type="button" onclick="openSettingsModal()" class="bg-amber-100 hover:bg-amber-200 text-slate-900 px-3 py-1 rounded-lg transition border border-amber-300">
+                    <i class="fa-solid fa-gear"></i> 학원명/비밀번호 설정
+                </button>
+                <button type="button" onclick="exportJSONData()" class="bg-amber-100 hover:bg-amber-200 text-slate-900 px-2.5 py-1 rounded-lg transition border border-amber-300">
+                    <i class="fa-solid fa-file-export"></i> 백업(JSON)
+                </button>
+                <label class="bg-amber-100 hover:bg-amber-200 text-slate-900 px-2.5 py-1 rounded-lg transition border border-amber-300 cursor-pointer">
+                    <i class="fa-solid fa-file-import"></i> 복원
+                    <input type="file" id="jsonFileInput" accept=".json" class="hidden" onchange="importJSONData(event)">
+                </label>
+                <button type="button" onclick="downloadStandaloneHTML()" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-3 py-1 rounded-lg shadow transition flex items-center gap-1">
+                    <i class="fa-solid fa-download"></i> 배포용 HTML 저장
+                </button>
+                <button type="button" onclick="logoutAdmin()" class="bg-rose-600 hover:bg-rose-700 text-white px-2.5 py-1 rounded-lg transition ml-2">
+                    로그아웃
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Notice Bar -->
+    <div class="bg-navy-950 text-gold-400 text-xs sm:text-sm py-2 px-4 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="bg-gold-500/20 text-gold-400 text-xs px-2.5 py-0.5 rounded border border-gold-500/30 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-graduation-cap"></i> 수시 입시 가이드
+                </span>
+                <span id="admissionYearLabel" class="truncate text-slate-300">2026학년도 입결 기준 · 최종 확인은 각 대학 입학처 모집요강</span>
+            </div>
+            <div class="flex items-center space-x-3 text-slate-300 text-xs shrink-0">
+                <span id="academyHeaderLabel" class="hidden md:inline font-medium text-slate-200 break-keep">퍼스트바리스타제과제빵학원 화성캠퍼스</span>
+                <button type="button" id="adminLoginBtn" onclick="openAdminLoginModal()" class="bg-white/10 hover:bg-gold-500 hover:text-navy-950 text-gold-400 px-2.5 py-1 rounded transition font-bold border border-gold-500/30 flex items-center gap-1">
+                    <i class="fa-solid fa-lock text-[10px]"></i> <span id="adminBtnText">관리자 모드</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Banner -->
+    <header class="bg-gradient-to-r from-navy-950 via-navy-900 to-slate-900 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-9 relative z-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-navy-800/80 border border-gold-500/40 text-gold-400 text-xs font-semibold px-3 py-1.5 rounded-xl mb-3 shadow-inner max-w-full">
+                        <i class="fa-solid fa-bread-slice shrink-0"></i>
+                        <span id="academyBadgeTitle" class="break-keep leading-tight text-xs sm:text-xs">퍼스트바리스타제과제빵학원 화성캠퍼스 진학 지도 Portal</span>
+                    </div>
+                    <h1 class="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight break-keep">
+                        제과제빵 · 베이커리 · 디저트학과 <br class="hidden sm:block">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-yellow-500">주요 대학 입시 요강 가이드</span>
+                    </h1>
+                    <p class="mt-2 text-slate-300 text-xs sm:text-sm max-w-2xl leading-relaxed break-keep">
+                        내 내신 등급을 입력하면 학교별로 안정·적정·소신·도전을 알려드려요. 수시 1·2차 등급컷, 원서접수 일정, 자격증 가산점, 학기별 커리큘럼을 쉽게 비교할 수 있습니다.
+                    </p>
+                </div>
+
+                <!-- Stats Badges -->
+                <div class="grid grid-cols-3 gap-3 bg-white/5 border border-white/10 p-3 sm:p-4 rounded-2xl backdrop-blur-md shrink-0">
+                    <div class="text-center px-2">
+                        <span class="block text-xs text-slate-400 font-medium">등록 대학</span>
+                        <span class="text-xl sm:text-2xl font-bold text-gold-400" id="statTotalCount">8</span>
+                        <span class="text-[10px] text-slate-400">개교</span>
+                    </div>
+                    <div class="text-center px-2 border-x border-white/10">
+                        <span class="block text-xs text-slate-400 font-medium">자체대회 개최</span>
+                        <span class="text-xl sm:text-2xl font-bold text-amber-400" id="statCompetitionCount">4</span>
+                        <span class="text-[10px] text-slate-400">개교</span>
+                    </div>
+                    <div class="text-center px-2">
+                        <span class="block text-xs text-slate-400 font-medium">동탄역 통학</span>
+                        <span class="text-xl sm:text-2xl font-bold text-emerald-400" id="statNearCount">5</span>
+                        <span class="text-[10px] text-slate-400">1시간 이내</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+        <!-- Search & Filter Controls -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6 mb-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <!-- Search Input -->
+                <div class="relative flex-1">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="searchInput" oninput="applyFilters()" 
+                           placeholder="대학명, 학과명, 지역명, 주최 대회명으로 검색 (예: 연성대, 오산, 베이커리경진대회)"
+                           class="w-full pl-11 pr-10 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-navy-800 transition">
+                    <button type="button" onclick="document.getElementById('searchInput').value=''; applyFilters();" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs p-1">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Sort Selector Dropdown -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <label for="sortSelect" class="text-xs font-bold text-slate-600 whitespace-nowrap">
+                        <i class="fa-solid fa-arrow-down-short-wide text-amber-500 mr-1"></i>정렬 기준:
+                    </label>
+                    <select id="sortSelect" onchange="applyFilters()" class="bg-slate-50 border border-slate-300 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-800 transition cursor-pointer">
+                        <option value="default">• 기본순 (등록순)</option>
+                        <option value="commuteAsc">▲ 동탄역 가까운순 (통학시간 짧은순)</option>
+                        <option value="commuteDesc">▼ 동탄역 먼순 (통학시간 긴순)</option>
+                        <option value="grade1AvgAsc">▲ 수시 1차 평균 높은순 (1등급대부터)</option>
+                        <option value="grade1AvgDesc">▼ 수시 1차 평균 낮은순 (낮은 등급부터)</option>
+                        <option value="grade1MinAsc">▲ 수시 1차 커트라인 높은순</option>
+                        <option value="grade1MinDesc">▼ 수시 1차 커트라인 낮은순</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- My Grade Input -->
+            <div class="mb-4 p-3.5 bg-gradient-to-r from-emerald-50 to-sky-50 border border-emerald-200 rounded-xl">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                    <div class="flex items-center gap-2 shrink-0">
+                        <i class="fa-solid fa-user-graduate text-emerald-600"></i>
+                        <label for="myGradeInput" class="text-xs font-extrabold text-slate-800 whitespace-nowrap">내 내신 등급</label>
+                        <input type="number" id="myGradeInput" step="0.1" min="1" max="9" placeholder="예: 4.5" oninput="onMyGradeChange()"
+                               class="w-24 px-3 py-2 bg-white border border-emerald-300 rounded-lg text-sm font-bold text-center focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <button type="button" onclick="clearMyGrade()" class="text-[11px] text-slate-400 hover:text-slate-600">지우기</button>
+                    </div>
+                    <label class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 cursor-pointer select-none">
+                        <input type="checkbox" id="onlyReachableChk" onchange="applyFilters()" class="w-3.5 h-3.5 rounded text-emerald-600">
+                        <span>도전 학교 빼고 보기</span>
+                    </label>
+                    <div class="flex flex-wrap items-center gap-1.5 text-[11px] sm:ml-auto">
+                        <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold border border-emerald-300">안정</span><span class="text-slate-500">평균 이내</span>
+                        <span class="px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 font-bold border border-sky-300">적정</span><span class="text-slate-500">최저 이내</span>
+                        <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold border border-amber-300">소신</span><span class="text-slate-500">최저+0.5</span>
+                        <span class="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 font-bold border border-rose-300">도전</span>
+                    </div>
+                </div>
+                <p class="text-[10px] text-slate-500 mt-2 break-keep">* 작년 수시 1차 입결과 단순 비교한 참고용 판정이에요. 면접·실기 전형은 면접 점수에 따라 결과가 달라질 수 있어요.</p>
+            </div>
+
+            <!-- Region Filter Bar -->
+            <div class="pt-3 border-t border-slate-100">
+                <div class="flex items-center gap-2 mb-2 text-xs font-bold text-slate-500">
+                    <i class="fa-solid fa-map-location-dot text-amber-500"></i> 지역별 빠르게 보기:
+                </div>
+                <div id="regionTabs" class="flex flex-wrap gap-2">
+                    <!-- Dynamic Region Tabs -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Header -->
+        <div class="flex items-center justify-between gap-3 mb-6 px-1">
+            <div class="flex items-center gap-2">
+                <span class="text-base font-bold text-slate-900">대학 목록</span>
+                <span id="resultCountBadge" class="bg-navy-950 text-gold-400 text-xs font-extrabold px-2.5 py-0.5 rounded-full">8개</span>
+            </div>
+            <div class="text-xs text-slate-500 hidden sm:block">
+                <i class="fa-solid fa-circle-info mr-1 text-slate-400"></i>대학 카드의 <span class="font-bold text-slate-700">[전형 선택]</span> 버튼을 통해 등급컷을 확인하세요.
+            </div>
+        </div>
+
+        <!-- University Card Grid -->
+        <div id="universityGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic Cards -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300 my-6">
+            <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-building-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-700">검색 조건에 일치하는 대학이 없습니다</h3>
+            <p class="text-sm text-slate-500 mt-1">검색어를 수정하거나 지역 필터를 '전체'로 변경해 보세요.</p>
+            <button type="button" onclick="resetFilters()" class="mt-4 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">
+                필터 및 검색 초기화
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Floating Comparison Bar -->
+    <div id="compareBar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-navy-950 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-gold-500/30 flex items-center gap-4 transition-all duration-300 transform translate-y-32 opacity-0 max-w-xl w-[92%]">
+        <div class="flex-1 min-w-0">
+            <div class="text-xs text-gold-400 font-semibold mb-1 flex items-center gap-1">
+                <i class="fa-solid fa-scale-balanced"></i> 관심 대학 비교함 (<span id="compareCount">0</span>/4)
+            </div>
+            <div id="compareChips" class="flex flex-wrap gap-1.5 max-h-12 overflow-y-auto custom-scrollbar"></div>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+            <button type="button" onclick="clearComparison()" class="text-xs text-slate-400 hover:text-white px-2 py-1">초기화</button>
+            <button type="button" onclick="openCompareModal()" class="px-4 py-2 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-600 hover:to-amber-700 text-slate-950 font-extrabold text-xs rounded-xl shadow-md transition flex items-center gap-1.5">
+                <span>한눈에 비교하기</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal 1: University Detail & Curriculum Modal -->
+    <div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="bg-navy-950 text-white p-5 sm:p-6 relative border-b border-gold-500/20">
+                <button type="button" onclick="closeDetailModal()" class="absolute right-5 top-5 text-slate-400 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="flex items-center gap-2 mb-2 flex-wrap">
+                    <span class="px-2.5 py-0.5 bg-gold-500/20 text-gold-400 text-xs font-semibold rounded border border-gold-500/30">
+                        <i class="fa-solid fa-cookie-bite mr-1"></i>제과제빵
+                    </span>
+                    <span id="mDegree" class="px-2.5 py-0.5 bg-sky-900/80 text-sky-300 text-xs font-extrabold rounded border border-sky-400/30"></span>
+                    <span id="mRegion" class="text-xs text-slate-300"></span>
+                    <span id="mCompetitionBadge" class="hidden px-2.5 py-0.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-extrabold text-xs rounded-full shadow-md flex items-center gap-1">
+                        <i class="fa-solid fa-award"></i> 자체대회 개최교
+                    </span>
+                </div>
+                <h2 id="mTitle" class="text-2xl font-bold text-white break-keep"></h2>
+                <p id="mDept" class="text-sm text-slate-300 mt-0.5 break-keep"></p>
+            </div>
+
+            <div class="p-6 overflow-y-auto space-y-6 custom-scrollbar text-sm">
+                
+                <!-- School Contact & Admission Website Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-3">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-200">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-navy-800 text-base"></i>
+                            <div>
+                                <span class="text-[11px] text-slate-400 block font-medium">입학 / 학과 문의처</span>
+                                <a id="mContactPhoneLink" href="#" class="text-sm font-extrabold text-navy-900 hover:text-gold-600 transition"></a>
+                            </div>
+                        </div>
+                        <a id="mAdmissionsUrl" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 bg-navy-900 hover:bg-navy-950 text-gold-400 text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm transition shrink-0">
+                            <span>입시 홈페이지 방문</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-start gap-2 text-xs text-slate-600">
+                        <i class="fa-solid fa-location-dot text-amber-500 shrink-0 mt-0.5"></i>
+                        <div>
+                            <span class="font-bold text-slate-700">학교 주소:</span>
+                            <span id="mAddress" class="ml-1 break-keep"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Schedule & Certificate Bonus -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="bg-white border border-slate-200 rounded-xl p-4">
+                        <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-calendar-days text-navy-800"></i> 원서접수 일정
+                        </h4>
+                        <div id="mSchedule" class="space-y-1.5 text-xs"></div>
+                    </div>
+                    <div id="mCertBox" class="border rounded-xl p-4">
+                        <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-certificate text-amber-600"></i> 제과·제빵기능사 가산점
+                        </h4>
+                        <div id="mCertBonus" class="text-xs"></div>
+                    </div>
+                </div>
+
+                <!-- School Hosted Competition Info Box -->
+                <div id="mCompetitionBox" class="hidden bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-yellow-500/10 border border-amber-400/50 rounded-xl p-4">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 bg-gradient-to-br from-amber-400 to-amber-600 text-white rounded-xl flex items-center justify-center shrink-0 shadow-md text-lg">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-extrabold text-amber-900 text-sm flex items-center gap-1.5 break-keep">
+                                <i class="fa-solid fa-award text-amber-600 mr-1"></i>고교생 제과제빵 경진대회 안내 및 특전
+                            </h4>
+                            <p id="mCompetitionInfo" class="text-xs text-amber-800 font-medium mt-1 leading-relaxed break-keep"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commute Info -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-start gap-3">
+                    <div class="w-10 h-10 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center shrink-0 text-lg font-bold">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-0.5">동탄역 출발 통학 정보</h4>
+                        <p class="text-navy-900 text-xs font-bold" id="mCommuteTime"></p>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed break-keep" id="mCommuteRoute"></p>
+                    </div>
+                </div>
+
+                <!-- Guidelines Table -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-navy-800"></i> 전형별 수시 모집요강 및 성적 등급컷
+                    </h4>
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                                <tr>
+                                    <th class="p-2.5">전형명</th>
+                                    <th class="p-2.5 text-center whitespace-nowrap" id="mGradeHead1">수시 1차 (최저/평균)</th>
+                                    <th class="p-2.5 text-center whitespace-nowrap" id="mGradeHead2">수시 2차 (최저/평균)</th>
+                                    <th class="p-2.5 text-center whitespace-nowrap">내신 판정</th>
+                                    <th class="p-2.5 whitespace-nowrap">반영 비율</th>
+                                    <th class="p-2.5 whitespace-nowrap">모집 인원</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mGuidelinesBody" class="divide-y divide-slate-200">
+                                <!-- Rendered dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Exam Note -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-lightbulb text-amber-500"></i> 학원 입시 지도 코멘트 및 팁
+                    </h4>
+                    <p id="mExamNote" class="text-xs text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-200 leading-relaxed break-keep"></p>
+                </div>
+
+                <!-- Semester Curriculum Section -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-navy-800"></i> 학기별 상세 커리큘럼 로드맵
+                    </h4>
+                    <div id="mSemesterContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- Rendered dynamically -->
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div>
+                    <div id="mTags" class="flex flex-wrap gap-1.5 mt-2"></div>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex justify-between items-center">
+                <div id="mAdminActions" class="hidden items-center gap-2">
+                    <button type="button" id="mDeleteBtn" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-xl transition flex items-center gap-1">
+                        <i class="fa-solid fa-trash-can"></i> 이 학교 삭제
+                    </button>
+                    <button type="button" id="mEditBtn" class="px-3 py-1.5 bg-navy-900 hover:bg-navy-950 text-white text-xs font-bold rounded-xl transition flex items-center gap-1">
+                        <i class="fa-solid fa-pen"></i> 정보 수정
+                    </button>
+                </div>
+                <button type="button" onclick="closeDetailModal()" class="px-5 py-2 bg-slate-700 hover:bg-slate-800 text-white text-xs font-semibold rounded-xl transition ml-auto">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Comparison Modal -->
+    <div id="compareModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-5xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="bg-navy-950 text-white p-5 border-b border-gold-500/20 flex justify-between items-center">
+                <div>
+                    <h3 class="text-xl font-bold flex items-center gap-2 break-keep">
+                        <i class="fa-solid fa-scale-balanced text-gold-400"></i> 선택 대학 입시요강 및 통학 조건 비교
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-0.5 break-keep">등록된 전형 요강, 자체대회 여부, 입시 홈페이지 및 문의처를 한눈에 비교합니다.</p>
+                </div>
+                <button type="button" onclick="closeCompareModal()" class="text-slate-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-6 overflow-x-auto overflow-y-auto custom-scrollbar flex-1">
+                <div id="compareTableContainer" class="min-w-[650px]"></div>
+            </div>
+
+            <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex justify-between items-center">
+                <span class="text-xs text-slate-500">* 본 정보는 학원 입시 지도 참고용 자료입니다.</span>
+                <button type="button" onclick="closeCompareModal()" class="px-5 py-2 bg-navy-800 hover:bg-navy-900 text-white text-xs font-semibold rounded-xl transition">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Admin Password Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-xs w-full p-6 text-center">
+            <div class="w-12 h-12 bg-navy-950 text-gold-400 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                <i class="fa-solid fa-user-lock"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">관리자 로그인</h3>
+            <p class="text-xs text-slate-500 mb-4">관리자 비밀번호를 입력해 주세요.</p>
+            <input type="password" id="adminPasswordInput" placeholder="비밀번호 입력" onkeydown="if(event.key==='Enter') submitAdminLogin()" class="w-full text-center px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-sm mb-4 focus:ring-2 focus:ring-navy-800 focus:outline-none font-mono">
+            <div class="flex justify-end gap-2">
+                <button type="button" onclick="closeAdminLoginModal()" class="w-1/2 py-2 bg-slate-100 text-slate-600 text-xs font-semibold rounded-xl">취소</button>
+                <button type="button" onclick="submitAdminLogin()" class="w-1/2 py-2 bg-navy-800 text-white text-xs font-semibold rounded-xl">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Admin Settings Modal -->
+    <div id="settingsModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">학원명 및 비밀번호 설정</h3>
+            <p class="text-xs text-slate-500 mb-4">학원 표기명과 수강생 입장 비밀번호, 관리자 비밀번호를 관리합니다.</p>
+            
+            <div class="space-y-3.5 text-xs mb-6">
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">학원 명칭</label>
+                    <input type="text" id="setAcademyName" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">기준 학년도 안내 문구 (상단 표시)</label>
+                    <input type="text" id="setAdmissionYear" placeholder="예: 2026학년도 입결 기준 · 2026.11 업데이트" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                </div>
+                <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl">
+                    <label class="block font-bold text-amber-900 mb-1 flex items-center gap-1">
+                        <i class="fa-solid fa-key text-amber-600"></i> 새 수강생 입장 비밀번호 (사이트 진입용)
+                    </label>
+                    <input type="text" id="setStudentPassword" placeholder="변경할 때만 입력 (기존 유지 시 빈칸)" class="w-full p-2.5 bg-white border border-amber-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none font-mono font-bold text-slate-800">
+                    <span class="text-[10px] text-amber-700 mt-1 block">비밀번호는 암호화되어 저장되므로 기존 비밀번호는 다시 보여드릴 수 없어요.</span>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1 flex items-center gap-1">
+                        <i class="fa-solid fa-lock text-slate-500"></i> 새 관리자 비밀번호
+                    </label>
+                    <input type="password" id="setAdminPassword" placeholder="기존 관리자 비밀번호 유지 시 빈칸" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800 focus:outline-none font-mono">
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-2">
+                <button type="button" onclick="closeSettingsModal()" class="px-4 py-2 bg-slate-100 text-slate-600 text-xs font-semibold rounded-xl">취소</button>
+                <button type="button" onclick="saveSettings()" class="px-4 py-2 bg-navy-800 text-white text-xs font-semibold rounded-xl">저장하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Add / Edit University Form Modal -->
+    <div id="univFormModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+            <div class="bg-navy-950 text-white p-5 flex justify-between items-center border-b border-gold-500/20">
+                <h3 id="univFormTitle" class="text-lg font-bold">대학 정보 추가/수정</h3>
+                <button type="button" onclick="closeUniversityFormModal()" class="text-slate-400 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-6 overflow-y-auto space-y-4 custom-scrollbar text-xs">
+                <input type="hidden" id="fId">
+                
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">대학명 *</label>
+                        <input type="text" id="fName" placeholder="예: 한국관광대학교" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">학과명 *</label>
+                        <input type="text" id="fDept" placeholder="예: 호텔제과제빵과" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-3">
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">학제 선택 *</label>
+                        <select id="fDegree" onchange="autoGenerateSemestersByDegree()" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-semibold focus:ring-2 focus:ring-navy-800">
+                            <option value="2년제">2년제 (4학기)</option>
+                            <option value="3년제">3년제 (6학기)</option>
+                            <option value="4년제">4년제 (8학기)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">지역 * (예: 경기 이천)</label>
+                        <input type="text" id="fRegion" placeholder="새 입력시 필터에 자동추가" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">통학시간 (분, 모르면 빈칸)</label>
+                        <input type="number" id="fCommuteMinutes" placeholder="예: 45" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                    </div>
+                </div>
+
+                <!-- Contact & Admissions Web Info Section -->
+                <div class="p-3.5 bg-sky-50 border border-sky-200 rounded-xl space-y-3">
+                    <h4 class="font-bold text-navy-900 flex items-center gap-1 text-xs">
+                        <i class="fa-solid fa-globe text-sky-700"></i> 입시 홈페이지, 문의처 및 주소 설정
+                    </h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">입시 홈페이지 URL</label>
+                            <input type="url" id="fAdmissionsUrl" placeholder="https://ipsi.kua.ac.kr" class="w-full p-2 bg-white border border-sky-300 rounded-lg text-xs">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">입학 / 학과 문의 전화번호</label>
+                            <input type="text" id="fContactPhone" placeholder="031-644-2114" class="w-full p-2 bg-white border border-sky-300 rounded-lg text-xs">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">학교 주소 (캠퍼스 위치)</label>
+                        <input type="text" id="fAddress" placeholder="경기도 이천시 마장면 지산로 91-137" class="w-full p-2 bg-white border border-sky-300 rounded-lg text-xs">
+                    </div>
+                </div>
+
+                <!-- Schedule & Certificate Bonus -->
+                <div class="p-3.5 bg-emerald-50 border border-emerald-200 rounded-xl space-y-3">
+                    <h4 class="font-bold text-emerald-900 flex items-center gap-1 text-xs">
+                        <i class="fa-solid fa-calendar-days text-emerald-700"></i> 원서접수 일정 · 자격증 가산점
+                    </h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">수시 1차 원서접수</label>
+                            <input type="text" id="fSchedule1" placeholder="예: 9.8(월) ~ 10.2(목)" class="w-full p-2 bg-white border border-emerald-300 rounded-lg text-xs">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">수시 2차 원서접수 <span class="text-slate-400 font-normal">(4년제는 비워두세요)</span></label>
+                            <input type="text" id="fSchedule2" placeholder="예: 11.7(금) ~ 11.21(금)" class="w-full p-2 bg-white border border-emerald-300 rounded-lg text-xs">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">면접·실기 일정 / 기타 메모</label>
+                        <input type="text" id="fScheduleNote" placeholder="예: 1차 면접 10.18(토), 합격자 발표 11.3" class="w-full p-2 bg-white border border-emerald-300 rounded-lg text-xs">
+                    </div>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">기능사 가산점</label>
+                            <select id="fCertBonus" class="w-full p-2 bg-white border border-emerald-300 rounded-lg text-xs font-semibold">
+                                <option value="unknown">확인 중</option>
+                                <option value="yes">있음</option>
+                                <option value="no">없음</option>
+                            </select>
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block font-semibold text-slate-700 mb-1">가산점 내용</label>
+                            <input type="text" id="fCertBonusInfo" placeholder="예: 제과·제빵기능사 소지 시 면접 점수 5점 가산" class="w-full p-2 bg-white border border-emerald-300 rounded-lg text-xs">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Competition Checkbox & Input -->
+                <div class="p-3.5 bg-amber-50 border border-amber-300 rounded-xl space-y-2">
+                    <label class="flex items-center gap-2 cursor-pointer font-extrabold text-amber-900 text-xs">
+                        <input type="checkbox" id="fHasCompetition" onchange="toggleCompetitionFieldDisplay()" class="w-4 h-4 text-amber-600 rounded focus:ring-amber-500">
+                        <span class="flex items-center gap-1"><i class="fa-solid fa-award text-amber-600"></i> 학교 자체 고교생 경진대회/공모전 개최교</span>
+                    </label>
+                    <div id="fCompetitionField" class="hidden pl-6 pt-1">
+                        <label class="block text-slate-700 font-bold mb-1">자체대회 상세 안내 및 수상 특전</label>
+                        <input type="text" id="fCompetitionInfo" placeholder="예: 전국 고교 베이커리 경진대회 주최 (수상자 가산점 및 장학금)" class="w-full p-2 bg-white border border-amber-300 rounded-lg text-xs">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">동탄역 출발 대중교통 상세 경로</label>
+                    <input type="text" id="fCommuteRoute" placeholder="예: 동탄역 → 광역버스 이용 후 시내버스 (약 45분)" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                </div>
+
+                <!-- Guidelines List Section -->
+                <div class="border border-amber-200 bg-amber-50/40 p-4 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-bold text-amber-900 flex items-center gap-1">
+                            <i class="fa-solid fa-list-check"></i> 전형(모집요강) 목록 관리
+                        </h4>
+                        <button type="button" onclick="addGuidelineRow()" class="bg-amber-600 hover:bg-amber-700 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg shadow transition flex items-center gap-1">
+                            <i class="fa-solid fa-plus"></i> 전형 추가
+                        </button>
+                    </div>
+                    <div id="guidelinesContainer" class="space-y-3">
+                        <!-- Dynamic guideline edit rows -->
+                    </div>
+                </div>
+
+                <!-- Semester Curriculum Edit Section -->
+                <div class="border border-sky-200 bg-sky-50/40 p-4 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div>
+                            <h4 class="font-bold text-sky-900 flex items-center gap-1">
+                                <i class="fa-solid fa-graduation-cap"></i> 학기별 커리큘럼 편집
+                            </h4>
+                            <span class="text-[10px] text-sky-700">선택한 학제에 따라 학기 수가 자동 조절됩니다.</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <button type="button" onclick="autoGenerateSemestersByDegree()" class="bg-sky-100 hover:bg-sky-200 text-sky-900 border border-sky-300 text-[11px] font-bold px-2 py-1 rounded-lg transition">
+                                학제에 맞게 학기 재구성
+                            </button>
+                            <button type="button" onclick="addSemesterRow()" class="bg-sky-700 hover:bg-sky-800 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg shadow transition flex items-center gap-1">
+                                <i class="fa-solid fa-plus"></i> 학기 추가
+                            </button>
+                        </div>
+                    </div>
+                    <div id="semestersContainer" class="space-y-2">
+                        <!-- Dynamic semester edit rows -->
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">커리큘럼 핵심 요약 설명</label>
+                    <textarea id="fCurriculum" rows="2" placeholder="천연발효빵 실습, 프렌치 디저트, 케이크 데코레이션 등" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800"></textarea>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">학원 입시 지도 코멘트 / 팁</label>
+                    <textarea id="fExamNote" rows="2" placeholder="면접 비중이 높아 실기 및 면접 준비 시 합격률 상승" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800"></textarea>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">태그 목록 (쉼표로 구분)</label>
+                    <input type="text" id="fTags" placeholder="천연발효빵, 학생부100%, 면접전형" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:ring-2 focus:ring-navy-800">
+                </div>
+            </div>
+
+            <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex justify-end gap-2">
+                <button type="button" onclick="closeUniversityFormModal()" class="px-4 py-2 bg-slate-100 text-slate-600 font-semibold rounded-xl">취소</button>
+                <button type="button" onclick="saveUniversityForm()" class="px-4 py-2 bg-navy-800 text-white font-semibold rounded-xl">저장하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs py-8 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-slate-300 font-semibold break-keep" id="footerAcademyLabel">퍼스트바리스타제과제빵학원 화성캠퍼스 진학 지도센터</p>
+            <p class="break-keep">본 페이지는 수강생 전용으로 동탄역 출발 기준 제과제빵 대학 입시 요강과 학기별 커리큘럼을 비교할 수 있습니다.</p>
+            <p class="text-slate-600">© Bakery & Pastry Admission Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script>
+        // Configurable Default Variables (비밀번호는 암호화된 값으로만 저장됩니다)
+        let STUDENT_PW_HASH = 'b520bc64b0093255c465e208e92257a6242bf9738783c0c7ca74bd9f7ae9a1ab';
+        let ADMIN_PW_HASH = 'c27c5d3177e8deb0123be46fed88f6af0dfb544614c882fbea0529308ea1dd49';
+        let academyName = '퍼스트바리스타제과제빵학원 화성캠퍼스';
+        let admissionYearText = '2026학년도 입결 기준 · 최종 확인은 각 대학 입학처 모집요강';
+        const DATA_SAVED_AT = 1795512539276;
+        const DEFAULT_STUDENT_HASH = 'b520bc64b0093255c465e208e92257a6242bf9738783c0c7ca74bd9f7ae9a1ab';
+        const DEFAULT_ADMIN_HASH = 'c27c5d3177e8deb0123be46fed88f6af0dfb544614c882fbea0529308ea1dd49';
+
+        // SHA-256 (비밀번호 암호화용)
+        function sha256Hex(str) {
+            const K = [0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+            const msg = new TextEncoder().encode(str);
+            const len = msg.length;
+            const total = ((len + 9 + 63) >> 6) << 6;
+            const buf = new Uint8Array(total);
+            buf.set(msg);
+            buf[len] = 0x80;
+            const dv = new DataView(buf.buffer);
+            const bits = len * 8;
+            dv.setUint32(total - 4, bits >>> 0);
+            dv.setUint32(total - 8, Math.floor(bits / 0x100000000));
+            let h = [0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+            const w = new Array(64);
+            const rotr = (x, n) => (x >>> n) | (x << (32 - n));
+            for (let off = 0; off < total; off += 64) {
+                for (let i = 0; i < 16; i++) w[i] = dv.getUint32(off + i * 4);
+                for (let i = 16; i < 64; i++) {
+                    const s0 = rotr(w[i-15], 7) ^ rotr(w[i-15], 18) ^ (w[i-15] >>> 3);
+                    const s1 = rotr(w[i-2], 17) ^ rotr(w[i-2], 19) ^ (w[i-2] >>> 10);
+                    w[i] = (w[i-16] + s0 + w[i-7] + s1) >>> 0;
+                }
+                let a = h[0], b = h[1], c = h[2], d = h[3], e = h[4], f = h[5], g = h[6], hh = h[7];
+                for (let i = 0; i < 64; i++) {
+                    const S1 = rotr(e, 6) ^ rotr(e, 11) ^ rotr(e, 25);
+                    const ch = (e & f) ^ (~e & g);
+                    const t1 = (hh + S1 + ch + K[i] + w[i]) >>> 0;
+                    const S0 = rotr(a, 2) ^ rotr(a, 13) ^ rotr(a, 22);
+                    const mj = (a & b) ^ (a & c) ^ (b & c);
+                    const t2 = (S0 + mj) >>> 0;
+                    hh = g; g = f; f = e; e = (d + t1) >>> 0; d = c; c = b; b = a; a = (t1 + t2) >>> 0;
+                }
+                h = [(h[0]+a)>>>0,(h[1]+b)>>>0,(h[2]+c)>>>0,(h[3]+d)>>>0,(h[4]+e)>>>0,(h[5]+f)>>>0,(h[6]+g)>>>0,(h[7]+hh)>>>0];
+            }
+            return h.map(x => x.toString(16).padStart(8, '0')).join('');
+        }
+        function hashPw(pw) { return sha256Hex('first-bakery-guide::' + pw); }
+
+        // Helpers
+        function isNum(v) { return typeof v === 'number' && !isNaN(v); }
+        function fmtGrade(v) { return isNum(v) ? (Number.isInteger(v) ? v.toFixed(1) : String(v)) : '<span class="text-slate-400 font-medium">미공개</span>'; }
+        function is4yr(item) { return item && item.degree === '4년제'; }
+        function fmtCommute(m) { return isNum(m) ? `약 ${m}분` : '확인 중'; }
+        function hasG2(g) { return isNum(g.grade2Min) || isNum(g.grade2Avg); }
+        function hasPrev(g) { return isNum(g.prevMin) || isNum(g.prevAvg) || !!g.prevRate || !!g.prevText; }
+        function prevSummary(g) {
+            const parts = [];
+            if (isNum(g.prevMin) || isNum(g.prevAvg)) {
+                parts.push([isNum(g.prevMin) ? '최저 ' + fmtGrade(g.prevMin) : '', isNum(g.prevAvg) ? '평균 ' + fmtGrade(g.prevAvg) : ''].filter(Boolean).join(' / '));
+            }
+            if (g.prevText) parts.push(escapeHtml(g.prevText));
+            if (g.prevRate) parts.push('경쟁률 ' + escapeHtml(g.prevRate));
+            return parts.join(' · ');
+        }
+        function escapeHtml(s) {
+            return String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+        }
+
+        // 내 내신 판정: 숫자가 낮을수록 좋은 등급
+        function judgeGrade(my, avg, min) {
+            if (!isNum(my)) return null;
+            // 원자료에서 최저/평균 순서가 바뀌어 있어도 큰 숫자를 최저컷으로 봅니다
+            if (isNum(avg) && isNum(min) && avg > min) { const t = avg; avg = min; min = t; }
+            const hasAvg = isNum(avg), hasMin = isNum(min);
+            if (!hasAvg && !hasMin) return null;
+            if (hasAvg && my <= avg) return 'safe';
+            if (hasMin && my <= min) return 'fit';
+            const edge = hasMin ? min : avg;
+            if (my <= edge + 0.5) return 'reach';
+            return 'hard';
+        }
+        const JUDGE_LABEL = {
+            safe:  { text: '안정', cls: 'bg-emerald-100 text-emerald-800 border-emerald-300' },
+            fit:   { text: '적정', cls: 'bg-sky-100 text-sky-800 border-sky-300' },
+            reach: { text: '소신', cls: 'bg-amber-100 text-amber-800 border-amber-300' },
+            hard:  { text: '도전', cls: 'bg-rose-100 text-rose-700 border-rose-300' }
+        };
+        function judgeBadge(j, small) {
+            if (!j) return '';
+            const L = JUDGE_LABEL[j];
+            return `<span class="inline-block ${small ? 'text-[10px] px-1.5' : 'text-[11px] px-2'} py-0.5 rounded-full font-extrabold border ${L.cls}">${L.text}</span>`;
+        }
+        // 학교 전체의 가장 좋은 판정 (전형 중 하나라도 가능하면)
+        function bestJudgeForCollege(item) {
+            const order = ['safe', 'fit', 'reach', 'hard'];
+            let best = null;
+            (item.guidelines || []).forEach(g => {
+                const j = judgeGrade(myGrade, g.grade1Avg, g.grade1Min);
+                if (j && (best === null || order.indexOf(j) < order.indexOf(best))) best = j;
+            });
+            return best;
+        }
+        // 정렬 기준 전형: 일반고 교과(학생부 100%) 전형 우선
+        function getSortGuideline(item) {
+            const gs = item.guidelines || [];
+            return gs.find(g => (g.examType || '').includes('100%') && !(g.name || '').includes('면접'))
+                || gs.find(g => !(g.name || '').includes('면접'))
+                || gs[0] || null;
+        }
+
+        // Initial Default Dataset (8 Colleges)
+        const initialCollegesData = [
+    {
+        "id": 1,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "대림대학교",
+        "dept": "제과제빵학과",
+        "degree": "2년제",
+        "region": "경기 안양",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 40% + 면접 60%",
+                "capacity": "수시1차 65명",
+                "grade1Min": 6.75,
+                "grade1Avg": 4.63,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "9.9:1",
+                "prevText": "",
+                "note": "학생부 2개 학기 평균 반영",
+                "prevMin": 6.81,
+                "prevAvg": 4.44,
+                "prevRate": "9.5:1"
+            }
+        ],
+        "tags": [
+            "#면접60%",
+            "#2개학기반영"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "수원여자대학교",
+        "dept": "제과제빵과",
+        "degree": "2년제",
+        "region": "경기 수원",
+        "commuteMinutes": 40,
+        "commuteRoute": "동탄역 → 수원역 광역버스 후 시내버스 (약 40분)",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "https://ipsi.swwu.ac.kr",
+        "contactPhone": "080-250-8000",
+        "address": "경기도 수원시 권선구 온수골로 56 (인제캠퍼스)",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 60% + 면접 40%",
+                "capacity": "수시1차 58명",
+                "grade1Min": 7.34,
+                "grade1Avg": 5.61,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "7.09:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 5.67,
+                "prevAvg": 5.67,
+                "prevRate": "6.07:1"
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "제과제빵 기초실습, 식품재료학, 위생학"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "트렌드 디저트 실습, 제과기능사 자격반"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "고급 케이크 디자인, 초콜릿·설탕 데코"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "베이커리 메뉴 개발, 현장실습 마스터"
+            }
+        ],
+        "curriculum": "여대 특유의 디저트 데코 및 디자인 강화, 베이커리 숍 프랜차이즈 연계 취업.",
+        "examNote": "수도권 여대 선호도가 높으며 디저트 디자인 및 초콜릿 공예 실습실 최신 시설 보유.",
+        "tags": [
+            "#면접40%",
+            "#수도권여대"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 3,
+        "name": "수원과학대학교",
+        "dept": "제과제빵과",
+        "degree": "2년제",
+        "region": "경기 화성",
+        "commuteMinutes": 35,
+        "commuteRoute": "동탄역 → 시내버스 (약 35분)",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "https://ipsi.ssc.ac.kr",
+        "contactPhone": "031-350-2000",
+        "address": "경기도 화성시 정남면 세자로 288",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 30명",
+                "grade1Min": 8.81,
+                "grade1Avg": 6.28,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "9.30:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 8.61,
+                "prevAvg": 6.2,
+                "prevRate": "8.07:1"
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "기초 제빵학, 제과 실무"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "제과제빵 기능사 실습, 제과 제빵학"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "유럽 전통 빵 실습, 케이크 실무"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "창업 캡스톤 디자인, 현장 인턴십"
+            }
+        ],
+        "curriculum": "실기 중심 교육과정, 제과제빵 기능사 및 자격증 특강 운영.",
+        "examNote": "화성시 소재로 동탄에서 가까우며 내신 등급대가 무난하여 안정 지원 가능.",
+        "tags": [
+            "#학생부100%",
+            "#동탄인근"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 4,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "국제대학교",
+        "dept": "제과제빵전공",
+        "degree": "2년제",
+        "region": "경기 평택",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 60% + 면접 40%",
+                "capacity": "수시1차 10명",
+                "grade1Min": 8.9,
+                "grade1Avg": 5.4,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "6.50:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 8.1,
+                "prevAvg": 5.5,
+                "prevRate": "2.4:1"
+            },
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 10명",
+                "grade1Min": 8.5,
+                "grade1Avg": 5.6,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "12.0:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 6.3,
+                "prevAvg": 5,
+                "prevRate": "13.3:1"
+            }
+        ],
+        "tags": [
+            "#면접40%",
+            "#학생부100%"
+        ]
+    },
+    {
+        "id": 5,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "yes",
+        "certBonusInfo": "면접 전형(학생부 40% + 면접 60%)에서 자격증 가산점 최대 40점",
+        "name": "혜전대학교",
+        "dept": "제과제빵과",
+        "degree": "2년제",
+        "region": "충남 홍성",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 40% + 면접 60%",
+                "capacity": "수시1차 90명",
+                "grade1Min": 7.5,
+                "grade1Avg": 5.8,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "6.9:1",
+                "prevText": "",
+                "note": "자격증 가산점 최대 40점",
+                "prevMin": 5.78,
+                "prevAvg": 4.64,
+                "prevRate": "26.2:1"
+            },
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 2명",
+                "grade1Min": 4.3,
+                "grade1Avg": 5.3,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "35.6:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 6.02,
+                "prevAvg": 4.98,
+                "prevRate": "13.1:1"
+            }
+        ],
+        "tags": [
+            "#면접60%",
+            "#자격증가산점"
+        ]
+    },
+    {
+        "id": 6,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "우송정보대학",
+        "dept": "제과제빵학부",
+        "degree": "2년제",
+        "region": "대전",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 80% + 면접 20%",
+                "capacity": "수시1차 97명",
+                "grade1Min": 2.79,
+                "grade1Avg": 3.66,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "6.6:1",
+                "prevText": "",
+                "note": "원자료 표기: 2.79/3.66(80%평균)",
+                "prevMin": 3.66,
+                "prevAvg": 3.16,
+                "prevRate": "4.5:1"
+            }
+        ],
+        "tags": [
+            "#면접20%"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "한국관광대학교",
+        "dept": "호텔제과제빵과",
+        "degree": "2년제",
+        "region": "경기 이천",
+        "commuteMinutes": 55,
+        "commuteRoute": "동탄역 → 광역버스 이용 후 이천 시외버스 환승 (약 55분)",
+        "hasCompetition": true,
+        "competitionInfo": "전국 고교 베이커리/디저트 경진대회 매년 주최 (수상자 가산점 부여 및 장학금 지원)",
+        "admissionsUrl": "https://ipsi.kua.ac.kr",
+        "contactPhone": "031-644-2114",
+        "address": "경기도 이천시 마장면 지산로 91-137",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 80% + 면접 20%",
+                "capacity": "수시1차 120명",
+                "grade1Min": 3.9,
+                "grade1Avg": 2.8,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "17.3:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 5.2,
+                "prevAvg": 3.6,
+                "prevRate": "11.8:1"
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "기초 제과기능실습, 제빵학 개론, 식품위생학, 재료학"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "유럽 아티장 베이커리, 프렌치 쁘띠 디저트 실습, 천연발효종 연구"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "설탕공예 아티스트 실무, 케이크 데코레이션, 베이커리 숍 창업학"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "쇼콜라티에 초콜릿 템퍼링, 윈도우 베이커리 캡스톤 디자인, 현장 실습"
+            }
+        ],
+        "curriculum": "일본 제빵 명인 교류, 천연발효빵 실습, 설탕·초콜릿 공예, 윈도우 베이커리 창업 실무.",
+        "examNote": "",
+        "tags": [
+            "#면접20%",
+            "#경쟁률높음"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 8,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "용인예술과학대학교",
+        "dept": "호텔제과제빵과",
+        "degree": "2년제",
+        "region": "경기 용인",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 42명",
+                "grade1Min": 5.8,
+                "grade1Avg": 8.3,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "8.6:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 5.7,
+                "prevAvg": 8.1,
+                "prevRate": "5.7:1"
+            }
+        ],
+        "tags": [
+            "#학생부100%"
+        ]
+    },
+    {
+        "id": 9,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "신안산대학교",
+        "dept": "호텔제과제빵과",
+        "degree": "2년제",
+        "region": "경기 안산",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 31명",
+                "grade1Min": null,
+                "grade1Avg": 5.6,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "9.9:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": null,
+                "prevAvg": 5.4,
+                "prevRate": "9.5:1"
+            }
+        ],
+        "tags": [
+            "#학생부100%"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "동원대학교",
+        "dept": "호텔제과제빵과",
+        "degree": "2년제",
+        "region": "경기 광주",
+        "commuteMinutes": 60,
+        "commuteRoute": "동탄역 → 버스 환승 (약 60분)",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "https://ipsi.tw.ac.kr",
+        "contactPhone": "031-760-0114",
+        "address": "경기도 광주시 곤지암읍 경충대로 26",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 100%",
+                "capacity": "수시1차 42명",
+                "grade1Min": 7.4,
+                "grade1Avg": 5.29,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "7.41",
+                "prevText": "",
+                "note": "",
+                "prevMin": 5.29,
+                "prevAvg": 7.4,
+                "prevRate": "7.4:1"
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "제빵 기초, 제과 이론"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "디저트 기초, 자격증 실기"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "케이크 데코, 슈가아트"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "현장 실습, 캡스톤 실무"
+            }
+        ],
+        "curriculum": "1인 1실습대 완비, 동아리 활동을 통한 각종 대회 참가 지원.",
+        "examNote": "대회 출전 동아리가 활성화되어 있어 실력을 키우기에 용이함.",
+        "tags": [
+            "#학생부100%",
+            "#1인1실습"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 11,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "동서울대학교",
+        "dept": "카페베이커리과",
+        "degree": "2년제",
+        "region": "경기 성남",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 80% + 출결 20%",
+                "capacity": "수시1차 47명",
+                "grade1Min": 7.8,
+                "grade1Avg": 6.16,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "7.0:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 7.8,
+                "prevAvg": 6.16,
+                "prevRate": "7:1"
+            }
+        ],
+        "tags": [
+            "#학생부80%",
+            "#출결20%"
+        ]
+    },
+    {
+        "id": 12,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "장안대학교",
+        "dept": "학과명 확인 필요",
+        "degree": "2년제",
+        "region": "경기 화성",
+        "guidelines": [
+            {
+                "name": "교과 전형",
+                "examType": "학생부 80% + 출결 20%",
+                "capacity": "수시1차 47명",
+                "grade1Min": 7.5,
+                "grade1Avg": 5.8,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "12.3:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 7.2,
+                "prevAvg": 6.1,
+                "prevRate": "8:1"
+            }
+        ],
+        "tags": [
+            "#학생부80%",
+            "#출결20%",
+            "#동탄인근"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "우송대학교",
+        "dept": "외식조리학부 제과제빵·조리전공",
+        "degree": "4년제",
+        "region": "대전",
+        "commuteMinutes": 75,
+        "commuteRoute": "동탄역 → SRT (대전역 하차) → 대중교통 (약 75분)",
+        "hasCompetition": true,
+        "competitionInfo": "우송 글로벌 베이커리 챔피언십 주최 (입상 시 입학 장학금)",
+        "admissionsUrl": "https://ipsi.wsu.ac.kr",
+        "contactPhone": "042-630-9600",
+        "address": "대전광역시 동구 동대전로 171",
+        "guidelines": [
+            {
+                "name": "면접 전형",
+                "examType": "학생부 80% + 면접 20%",
+                "capacity": "",
+                "grade1Min": 3.7,
+                "grade1Avg": 2.4,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "19.1:1",
+                "prevText": "",
+                "note": "최저 = 100% 컷 3.7",
+                "prevMin": null,
+                "prevAvg": 2.6,
+                "prevRate": ""
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "글로벌 제과 기초, 식품화학"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "프렌치 페스트리 기본 실습, 영양학"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "유럽식 아티장 제빵, 초콜릿 템퍼링"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "설탕공예 슈가아트, 디저트 뷔페 기획"
+            },
+            {
+                "name": "3학년 1학기",
+                "subjects": "베이커리 숍 경영학, 외식 브랜드 마케팅"
+            },
+            {
+                "name": "3학년 2학기",
+                "subjects": "글로벌 해외 인턴십 프로그램, 제과 기술 연구"
+            },
+            {
+                "name": "4학년 1학기",
+                "subjects": "베이커리 캡스톤 디자인 1, 신메뉴 개발"
+            },
+            {
+                "name": "4학년 2학기",
+                "subjects": "졸업 연구 논문/작품전, 캡스톤 2"
+            }
+        ],
+        "curriculum": "4년제 학사 학위 과정, 최고 수준의 프랑스/유럽 해외 파티시에 교수진 및 글로벌 인턴십.",
+        "examNote": "4년제 제과제빵 학사학위 취득 가능. 해외 취업 및 글로벌 명장 진로 추천. 글로벌제과제빵학과 신설.",
+        "tags": [
+            "#4년제학사",
+            "#면접20%",
+            "#글로벌제과제빵학과신설"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 14,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "목원대학교",
+        "dept": "외식조리·제과제빵학과",
+        "degree": "4년제",
+        "region": "대전",
+        "guidelines": [
+            {
+                "name": "수시 전형",
+                "examType": "반영비율 확인 필요",
+                "capacity": "",
+                "grade1Min": 3.13,
+                "grade1Avg": 2.73,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "13.21:1",
+                "prevText": "",
+                "note": "",
+                "prevMin": 3.25,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "tags": [
+            "#4년제학사"
+        ]
+    },
+    {
+        "id": 15,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "청운대학교",
+        "dept": "호텔조리베이커리경영학과",
+        "degree": "4년제",
+        "region": "충남 홍성",
+        "guidelines": [
+            {
+                "name": "수시 전형",
+                "examType": "반영비율 확인 필요",
+                "capacity": "",
+                "grade1Min": 3.98,
+                "grade1Avg": 4.47,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "9.8:1",
+                "prevText": "70%컷 3.53",
+                "note": "",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "tags": [
+            "#4년제학사"
+        ]
+    },
+    {
+        "id": 16,
+        "commuteMinutes": null,
+        "commuteRoute": "",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "",
+        "contactPhone": "",
+        "address": "",
+        "semesters": [],
+        "curriculum": "",
+        "examNote": "",
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": "",
+        "name": "경희대학교",
+        "dept": "조리&푸드디자인학과",
+        "degree": "4년제",
+        "region": "서울",
+        "guidelines": [
+            {
+                "name": "수시 전형",
+                "examType": "반영비율 확인 필요",
+                "capacity": "",
+                "grade1Min": null,
+                "grade1Avg": 1.71,
+                "grade2Min": null,
+                "grade2Avg": null,
+                "rate1": "9.5:1",
+                "prevText": "70%컷 3.66",
+                "note": "70%컷 1.95",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "tags": [
+            "#4년제학사",
+            "#서울"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "연성대학교",
+        "dept": "호텔외식조리과 베이커리·카페전공",
+        "degree": "2년제",
+        "region": "경기 안양",
+        "commuteMinutes": 45,
+        "commuteRoute": "동탄역 → 범계/안양 광역버스 이용 후 시내버스 (약 45분)",
+        "hasCompetition": true,
+        "competitionInfo": "연성 챔피언십 베이커리 경진대회 주최 (수상자 특별전형 가산점)",
+        "admissionsUrl": "https://ipsi.yeonsung.ac.kr",
+        "contactPhone": "031-441-5994",
+        "address": "경기도 안양시 만안구 연성로 29",
+        "guidelines": [
+            {
+                "name": "학생부 100% 전형",
+                "grade1Min": 4.2,
+                "grade1Avg": 3.5,
+                "grade2Min": 4.5,
+                "grade2Avg": 3.8,
+                "examType": "학생부 100%",
+                "capacity": "수시1차 50명 / 수시2차 20명",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            },
+            {
+                "name": "면접 전형",
+                "grade1Min": 4.9,
+                "grade1Avg": 4.2,
+                "grade2Min": 5.2,
+                "grade2Avg": 4.5,
+                "examType": "학생부 60% + 면접 40%",
+                "capacity": "수시1차 20명",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "서양 제과 기초, 제빵 실기, 베이커리 위생 관리"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "디저트 핑거푸드 아티스트, 트렌디 구움과자, 제과자격실기"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "호텔 디저트 뷔페 메뉴 실무, 베이커리 마케팅"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "카페 베이커리 캡스톤 실무, 현장 맞춤형 인턴십"
+            }
+        ],
+        "curriculum": "유럽식 아티장 베이커리, 디저트 핑거푸드, 베이커리 카페 실무, 제과제빵 자격 실기.",
+        "examNote": "학생부 100% 전형의 경우 1~3학년 중 최우수 2개 학기 교과 내신만 반영되어 유리함.",
+        "tags": [
+            "#수도권선호",
+            "#학생부100%",
+            "#유럽식베이커리",
+            "#디저트아트"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 18,
+        "name": "오산대학교",
+        "dept": "호텔조리계열 제과제빵전공",
+        "degree": "2년제",
+        "region": "경기 오산",
+        "commuteMinutes": 25,
+        "commuteRoute": "동탄역 → 오산역 방향 시내버스 (약 25분 초근접)",
+        "hasCompetition": false,
+        "competitionInfo": "",
+        "admissionsUrl": "https://ipsi.osan.ac.kr",
+        "contactPhone": "031-377-7777",
+        "address": "경기도 오산시 청학로 45",
+        "guidelines": [
+            {
+                "name": "일반고 면접 전형",
+                "grade1Min": 5.2,
+                "grade1Avg": 4.4,
+                "grade2Min": 5.5,
+                "grade2Avg": 4.6,
+                "examType": "학생부 70% + 면접 30%",
+                "capacity": "수시1차 40명 / 수시2차 15명",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "기초 제빵 실습, 제과기능사 자격 실기 1"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "프렌치 쁘띠 디저트, 고급 구움과자 믹스"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "슈가크래프트 슈가아트, 고급 케이크 데코"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "대형 베이커리 실습, 제과제빵 창업 프로젝트"
+            }
+        ],
+        "curriculum": "프렌치 쁘띠 디저트, 슈가크래프트, 제과/제빵기능사 전원 취득반, 대형 베이커리 실습.",
+        "examNote": "동탄역에서 25분 거리로 통학 편의성 최상. 제과기능사 자격증 소지자 가산점 부여.",
+        "tags": [
+            "#동탄초근접",
+            "#프렌치디저트",
+            "#슈가크래프트",
+            "#자격증가산점"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    },
+    {
+        "id": 19,
+        "name": "청강문화산업대학교",
+        "dept": "푸드스쿨 베이커리전공",
+        "degree": "3년제",
+        "region": "경기 이천",
+        "commuteMinutes": 65,
+        "commuteRoute": "동탄역 → 셔틀/시외버스 (약 65분)",
+        "hasCompetition": true,
+        "competitionInfo": "청강 푸드콘테스트 제과제빵 부문 주최 (우수상 이상 특전)",
+        "admissionsUrl": "https://ipsi.ck.ac.kr",
+        "contactPhone": "031-637-1114",
+        "address": "경기도 이천시 마장면 청강가창로 389-94",
+        "guidelines": [
+            {
+                "name": "실기/면접 전형",
+                "grade1Min": 5.5,
+                "grade1Avg": 4.8,
+                "grade2Min": 5.8,
+                "grade2Avg": 5,
+                "examType": "실기/면접 60% + 학생부 40%",
+                "capacity": "수시1차 30명",
+                "prevMin": null,
+                "prevAvg": null,
+                "prevRate": ""
+            }
+        ],
+        "semesters": [
+            {
+                "name": "1학년 1학기",
+                "subjects": "푸드 아티잔 기초, 디저트 랩 1"
+            },
+            {
+                "name": "1학년 2학기",
+                "subjects": "베이커리 크리에이티브 실무, 패밀리 레스토랑 디저트"
+            },
+            {
+                "name": "2학년 1학기",
+                "subjects": "스페셜티 브레드 랩, 푸드 스타일링"
+            },
+            {
+                "name": "2학년 2학기",
+                "subjects": "푸드 비즈니스 캡스톤, 팝업 레스토랑 실습"
+            },
+            {
+                "name": "3학년 1학기",
+                "subjects": "고급 디저트 쉐프 마스터, 글로벌 파티시에 인턴십"
+            },
+            {
+                "name": "3학년 2학기",
+                "subjects": "베이커리 브랜드 창업 캡스톤, 졸업 작품전"
+            }
+        ],
+        "curriculum": "3년제 과정으로 창의적 트렌드 디저트, 푸드 아티스트 육성, 팝업 실무 심화.",
+        "examNote": "실기 및 면접 비중이 매우 커서 성적보다 실무 포트폴리오 준비가 합격 열쇠.",
+        "tags": [
+            "#3년제심화",
+            "#트렌디디저트",
+            "#실기면접중요",
+            "#팝업실무"
+        ],
+        "schedule1": "",
+        "schedule2": "",
+        "scheduleNote": "",
+        "certBonus": "unknown",
+        "certBonusInfo": ""
+    }
+];
+
+        // Global State
+        let colleges = [];
+        let selectedRegion = '전체';
+        let selectedCompareIds = [];
+        let activeGuidelineIndices = {};
+        let isAdminLoggedIn = false;
+        let currentDetailUnivId = null;
+        let myGrade = null;
+
+        // Safe Storage Helpers (Handles Sandbox iFrame restrictions gracefully)
+        function getSafeStorage(type, key) {
+            try {
+                const storage = type === 'session' ? sessionStorage : localStorage;
+                return storage.getItem(key);
+            } catch (e) {
+                return null;
+            }
+        }
+
+        function setSafeStorage(type, key, val) {
+            try {
+                const storage = type === 'session' ? sessionStorage : localStorage;
+                storage.setItem(key, val);
+            } catch (e) {
+                console.log('Storage unavailable:', e);
+            }
+        }
+
+        // Window Init
+        window.onload = function() {
+            checkGateUnlock();
+            loadStoredSettings();
+            loadStoredColleges();
+            const savedGrade = parseFloat(getSafeStorage('session', 'bakery_my_grade'));
+            if (isNum(savedGrade)) {
+                myGrade = savedGrade;
+                document.getElementById('myGradeInput').value = savedGrade;
+            }
+            // 관리자 버튼은 주소 끝에 ?admin 을 붙이거나 원본 파일(로컬)에서만 보입니다
+            const isLocalFile = location.protocol === 'file:';
+            const wantsAdmin = new URLSearchParams(location.search).has('admin');
+            if (!isLocalFile && !wantsAdmin) {
+                document.getElementById('adminLoginBtn').classList.add('hidden');
+            }
+            renderRegionTabs();
+            applyFilters();
+        };
+
+        // ESC 키 / 바깥 클릭으로 창 닫기
+        document.addEventListener('keydown', e => {
+            if (e.key !== 'Escape') return;
+            ['detailModal', 'compareModal', 'adminLoginModal', 'settingsModal', 'univFormModal'].forEach(closeModalById);
+        });
+        ['detailModal', 'compareModal', 'adminLoginModal', 'settingsModal'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.addEventListener('click', e => { if (e.target === el) closeModalById(id); });
+        });
+        function closeModalById(id) {
+            const el = document.getElementById(id);
+            if (el) { el.classList.remove('flex'); el.classList.add('hidden'); }
+        }
+
+        function onMyGradeChange() {
+            const v = parseFloat(document.getElementById('myGradeInput').value);
+            myGrade = (isNum(v) && v >= 1 && v <= 9) ? v : null;
+            setSafeStorage('session', 'bakery_my_grade', myGrade === null ? '' : String(myGrade));
+            applyFilters();
+        }
+        function clearMyGrade() {
+            document.getElementById('myGradeInput').value = '';
+            document.getElementById('onlyReachableChk').checked = false;
+            onMyGradeChange();
+        }
+
+        // Gate Access Logic
+        function checkGateUnlock() {
+            const unlocked = getSafeStorage('session', 'bakery_gate_unlocked');
+            const gate = document.getElementById('studentAccessGate');
+            if (unlocked === 'true' && gate) {
+                gate.classList.add('hidden');
+            }
+        }
+
+        function submitGateLogin(e) {
+            if (e) e.preventDefault();
+            const inputPw = (document.getElementById('gatePasswordInput').value || '').trim();
+            const errorMsg = document.getElementById('gateErrorMsg');
+            const gate = document.getElementById('studentAccessGate');
+
+            const h = hashPw(inputPw);
+            if (h === STUDENT_PW_HASH || h === ADMIN_PW_HASH) {
+                setSafeStorage('session', 'bakery_gate_unlocked', 'true');
+                if (errorMsg) errorMsg.classList.add('hidden');
+                if (gate) gate.classList.add('hidden');
+            } else {
+                if (errorMsg) errorMsg.classList.remove('hidden');
+            }
+        }
+
+        function loadStoredSettings() {
+            // 이 브라우저에서 저장한 설정이 파일보다 최신일 때만 사용
+            try {
+                const raw = getSafeStorage('local', 'bakery_settings_v7');
+                if (raw) {
+                    const s = JSON.parse(raw);
+                    if (s && (s.savedAt || 0) >= DATA_SAVED_AT) {
+                        if (s.studentHash) STUDENT_PW_HASH = s.studentHash;
+                        if (s.adminHash) ADMIN_PW_HASH = s.adminHash;
+                        if (s.academyName) academyName = s.academyName;
+                        if (s.admissionYearText) admissionYearText = s.admissionYearText;
+                    }
+                }
+            } catch (e) {}
+            updateAcademyNameDisplays();
+        }
+
+        function saveSettingsToLocal() {
+            setSafeStorage('local', 'bakery_settings_v7', JSON.stringify({
+                savedAt: Date.now(),
+                studentHash: STUDENT_PW_HASH,
+                adminHash: ADMIN_PW_HASH,
+                academyName,
+                admissionYearText
+            }));
+        }
+
+        function updateAcademyNameDisplays() {
+            document.getElementById('admissionYearLabel').innerText = admissionYearText;
+            document.getElementById('gateAcademyTitle').innerText = academyName;
+            document.getElementById('academyHeaderLabel').innerText = academyName;
+            document.getElementById('academyBadgeTitle').innerText = `${academyName} 진학 지도 Portal`;
+            document.getElementById('footerAcademyLabel').innerText = `${academyName} 진학 지도센터`;
+        }
+
+        // 예전 형식("최저 6.81 / 평균 4.44 · 경쟁률 9.5:1")을 칸별로 나눔
+        function splitPrev(g) {
+            const toN = v => (v === '' || v === null || v === undefined || isNaN(parseFloat(v))) ? null : parseFloat(v);
+            if (g.prevMin !== undefined || g.prevAvg !== undefined || g.prevRate !== undefined) {
+                return { prevMin: toN(g.prevMin), prevAvg: toN(g.prevAvg), prevRate: g.prevRate || '', prevText: g.prevText || '' };
+            }
+            const t = g.prevText || '';
+            const m = /^\s*(?:최저\s*([\d.]+))?\s*\/?\s*(?:평균\s*([\d.]+))?\s*(?:·\s*경쟁률\s*(\S+))?\s*$/.exec(t);
+            if (t && m && (m[1] || m[2] || m[3])) return { prevMin: toN(m[1]), prevAvg: toN(m[2]), prevRate: m[3] || '', prevText: '' };
+            return { prevMin: null, prevAvg: null, prevRate: '', prevText: t };
+        }
+
+        function normalizeCollege(c) {
+            const toNum = v => (v === '' || v === null || v === undefined || isNaN(parseFloat(v))) ? null : parseFloat(v);
+            c.schedule1 = c.schedule1 || '';
+            c.schedule2 = c.schedule2 || '';
+            c.scheduleNote = c.scheduleNote || '';
+            c.certBonus = c.certBonus || 'unknown';
+            c.certBonusInfo = c.certBonusInfo || '';
+            c.commuteMinutes = toNum(c.commuteMinutes);
+            c.guidelines = (c.guidelines || []).map(g => ({
+                ...g,
+                rate1: g.rate1 || '',
+                ...splitPrev(g),
+                note: g.note || '',
+                grade1Min: toNum(g.grade1Min), grade1Avg: toNum(g.grade1Avg),
+                grade2Min: toNum(g.grade2Min), grade2Avg: toNum(g.grade2Avg)
+            }));
+            return c;
+        }
+
+        // 이 브라우저에 저장된 데이터가 파일에 들어있는 데이터보다 최신일 때만 사용
+        function loadStoredColleges() {
+            let list = null;
+            try {
+                const raw = getSafeStorage('local', 'bakery_colleges_v7');
+                if (raw) {
+                    const saved = JSON.parse(raw);
+                    if (saved && Array.isArray(saved.colleges) && (saved.savedAt || 0) >= DATA_SAVED_AT) {
+                        list = saved.colleges;
+                    }
+                }
+            } catch (e) {}
+            if (!list) list = JSON.parse(JSON.stringify(initialCollegesData));
+            colleges = list.map(normalizeCollege);
+        }
+
+        function saveCollegesToLocal() {
+            setSafeStorage('local', 'bakery_colleges_v7', JSON.stringify({ savedAt: Date.now(), colleges }));
+        }
+
+        // Render Region Filter Tabs
+        function renderRegionTabs() {
+            const container = document.getElementById('regionTabs');
+            if (!container) return;
+
+            const regionSet = new Set(['전체']);
+            colleges.forEach(c => {
+                if (c.region) regionSet.add(c.region.trim());
+            });
+
+            const regions = Array.from(regionSet);
+            container.innerHTML = '';
+
+            regions.forEach(reg => {
+                const isActive = (selectedRegion === reg);
+                const activeClass = isActive
+                    ? 'bg-navy-950 text-gold-400 font-extrabold border-navy-950 shadow-sm'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium border-slate-200';
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `px-3 py-1.5 rounded-xl border text-xs transition ${activeClass}`;
+                btn.textContent = reg;
+                btn.addEventListener('click', () => setRegionFilter(reg));
+                container.appendChild(btn);
+            });
+        }
+
+        function setRegionFilter(reg) {
+            selectedRegion = reg;
+            renderRegionTabs();
+            applyFilters();
+        }
+
+        // Apply Filters & Sorting
+        function applyFilters() {
+            const query = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+            const sortVal = document.getElementById('sortSelect').value;
+
+            let filtered = colleges.filter(item => {
+                const matchRegion = (selectedRegion === '전체') || (item.region && item.region.includes(selectedRegion));
+                const matchQuery = !query || 
+                    (item.name && item.name.toLowerCase().includes(query)) ||
+                    (item.dept && item.dept.toLowerCase().includes(query)) ||
+                    (item.region && item.region.toLowerCase().includes(query)) ||
+                    (item.address && item.address.toLowerCase().includes(query)) ||
+                    (item.competitionInfo && item.competitionInfo.toLowerCase().includes(query)) ||
+                    (item.curriculum && item.curriculum.toLowerCase().includes(query)) ||
+                    (item.tags && item.tags.some(t => t.toLowerCase().includes(query)));
+
+                const onlyReachable = document.getElementById('onlyReachableChk').checked;
+                const matchReach = !onlyReachable || myGrade === null || (() => {
+                    const j = bestJudgeForCollege(item);
+                    return j !== null && j !== 'hard';
+                })();
+
+                return matchRegion && matchQuery && matchReach;
+            });
+
+            // 정렬은 학교마다 같은 기준(일반고 교과 전형)으로 비교, 미공개 값은 항상 맨 뒤
+            function getGuidelineStat(item, field) {
+                if (field.startsWith('grade2') && is4yr(item)) return null;
+                const g = getSortGuideline(item);
+                return (g && isNum(g[field])) ? g[field] : null;
+            }
+            function cmpNullsLast(va, vb, desc) {
+                if (va === null && vb === null) return 0;
+                if (va === null) return 1;
+                if (vb === null) return -1;
+                return desc ? vb - va : va - vb;
+            }
+
+            filtered.sort((a, b) => {
+                if (sortVal === 'commuteAsc') return cmpNullsLast(a.commuteMinutes, b.commuteMinutes, false);
+                if (sortVal === 'commuteDesc') return cmpNullsLast(a.commuteMinutes, b.commuteMinutes, true);
+                const m = sortVal.match(/^(grade[12](?:Avg|Min))(Asc|Desc)$/);
+                if (m) return cmpNullsLast(getGuidelineStat(a, m[1]), getGuidelineStat(b, m[1]), m[2] === 'Desc');
+                return a.id - b.id;
+            });
+
+            document.getElementById('statTotalCount').innerText = colleges.length;
+            document.getElementById('statCompetitionCount').innerText = colleges.filter(c => c.hasCompetition).length;
+            document.getElementById('statNearCount').innerText = colleges.filter(c => isNum(c.commuteMinutes) && c.commuteMinutes <= 60).length;
+
+            renderCards(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('sortSelect').value = 'default';
+            selectedRegion = '전체';
+            renderRegionTabs();
+            applyFilters();
+        }
+
+        // Render Grid Cards
+        function renderCards(data) {
+            const grid = document.getElementById('universityGrid');
+            const emptyState = document.getElementById('emptyState');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+            document.getElementById('resultCountBadge').innerText = `${data.length}개`;
+
+            if (data.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            data.forEach(item => {
+                const isChecked = selectedCompareIds.includes(item.id);
+                const guidelines = item.guidelines || [];
+                
+                if (activeGuidelineIndices[item.id] === undefined || activeGuidelineIndices[item.id] >= guidelines.length) {
+                    activeGuidelineIndices[item.id] = 0;
+                }
+                const activeIndex = activeGuidelineIndices[item.id];
+                const activeG = guidelines[activeIndex] || { grade1Min: null, grade1Avg: null, grade2Min: null, grade2Avg: null, examType: '정보 없음' };
+                const four = is4yr(item);
+                const j1 = judgeGrade(myGrade, activeG.grade1Avg, activeG.grade1Min);
+                const j2 = four ? null : judgeGrade(myGrade, activeG.grade2Avg, activeG.grade2Min);
+                const bestJ = bestJudgeForCollege(item);
+                const label1 = four ? '수시' : '수시 1차';
+                const box1 = `
+                        <div class="bg-white rounded-lg p-1.5 border border-slate-100 shadow-sm">
+                            <span class="text-[10px] font-semibold text-slate-400 block">${label1} (최저/평균) ${judgeBadge(j1, true)}</span>
+                            <span class="font-extrabold text-slate-900">${fmtGrade(activeG.grade1Min)}</span>
+                            <span class="text-slate-300">/</span>
+                            <span class="font-extrabold text-amber-600">${fmtGrade(activeG.grade1Avg)}</span>
+                            ${activeG.rate1 ? `<span class="block text-[10px] text-slate-500 mt-0.5">경쟁률 ${escapeHtml(activeG.rate1)}</span>` : ''}
+                        </div>`;
+                let box2 = '';
+                if (!four && hasG2(activeG)) {
+                    box2 = `
+                        <div class="bg-white rounded-lg p-1.5 border border-slate-100 shadow-sm">
+                            <span class="text-[10px] font-semibold text-slate-400 block">수시 2차 (최저/평균) ${judgeBadge(j2, true)}</span>
+                            <span class="font-extrabold text-slate-800">${fmtGrade(activeG.grade2Min)}</span>
+                            <span class="text-slate-300">/</span>
+                            <span class="font-extrabold text-amber-600">${fmtGrade(activeG.grade2Avg)}</span>
+                        </div>`;
+                } else if (hasPrev(activeG)) {
+                    const hasNums = isNum(activeG.prevMin) || isNum(activeG.prevAvg);
+                    box2 = `
+                        <div class="bg-slate-50 rounded-lg p-1.5 border border-dashed border-slate-200">
+                            <span class="text-[10px] font-semibold text-slate-400 block">전년도${four ? '' : ' 1차'} (최저/평균)</span>
+                            ${hasNums ? `
+                                <span class="font-extrabold text-slate-500">${fmtGrade(activeG.prevMin)}</span>
+                                <span class="text-slate-300">/</span>
+                                <span class="font-extrabold text-slate-500">${fmtGrade(activeG.prevAvg)}</span>` : ''}
+                            ${activeG.prevText ? `<span class="block font-bold text-slate-500 ${hasNums ? 'text-[10px]' : ''}">${escapeHtml(activeG.prevText)}</span>` : ''}
+                            ${activeG.prevRate ? `<span class="block text-[10px] text-slate-400 mt-0.5">경쟁률 ${escapeHtml(activeG.prevRate)}</span>` : ''}
+                        </div>`;
+                }
+                const gradeBoxesHtml = `
+                    <div class="grid ${box2 ? 'grid-cols-2' : 'grid-cols-1'} gap-2 text-center text-xs">${box1}${box2}</div>
+                    ${activeG.note ? `<p class="text-[10px] text-slate-500 mt-1.5 break-keep"><i class="fa-solid fa-circle-info mr-0.5"></i>${escapeHtml(activeG.note)}</p>` : ''}`;
+                const certChip = item.certBonus === 'yes'
+                    ? `<span class="text-[10px] px-2 py-0.5 rounded-md font-bold bg-emerald-100 text-emerald-800 border border-emerald-300"><i class="fa-solid fa-certificate mr-0.5"></i>기능사 가산점</span>` : '';
+                const schedChip = item.schedule1
+                    ? `<span class="text-[10px] px-2 py-0.5 rounded-md font-semibold bg-sky-50 text-sky-800 border border-sky-200"><i class="fa-regular fa-calendar mr-0.5"></i>1차 ${escapeHtml(item.schedule1)}</span>` : '';
+
+                let guidelineTabsHtml = '';
+                if (guidelines.length > 1) {
+                    guidelineTabsHtml = `
+                        <div class="flex flex-wrap gap-1 mb-2">
+                            ${guidelines.map((g, idx) => `
+                                <button type="button" onclick="setCardGuidelineTab(${item.id}, ${idx})" class="px-2 py-0.5 rounded text-[10px] font-semibold transition ${idx === activeIndex ? 'bg-navy-800 text-white' : 'bg-slate-200 text-slate-600 hover:bg-slate-300'}">
+                                    ${g.name || `전형 ${idx+1}`}
+                                </button>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                const cardHtml = `
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group relative">
+                        
+                        <!-- Admin Quick Controls -->
+                        ${isAdminLoggedIn ? `
+                            <div class="absolute right-3 top-3 z-10 flex items-center gap-1 bg-amber-400 p-1 rounded-lg shadow-md border border-amber-500">
+                                <button type="button" onclick="openUniversityFormModal(${item.id})" class="bg-navy-900 text-white text-[10px] px-2 py-1 rounded font-bold hover:bg-navy-950">수정</button>
+                                <button type="button" onclick="deleteUniversity(${item.id})" class="bg-rose-600 text-white text-[10px] px-2 py-1 rounded font-bold hover:bg-rose-700">삭제</button>
+                            </div>
+                        ` : ''}
+
+                        <div class="p-5">
+                            <!-- Header Badges -->
+                            <div class="flex flex-wrap items-center justify-between gap-1.5 mb-3">
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-200 inline-flex items-center gap-1">
+                                        <i class="fa-solid fa-cookie-bite"></i> 제과제빵
+                                    </span>
+                                    <span class="text-[11px] font-extrabold px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-300">
+                                        ${item.degree || '2년제'}
+                                    </span>
+                                    <span class="text-xs text-slate-500"><i class="fa-solid fa-location-dot"></i> ${item.region || '수도권'}</span>
+                                    ${item.hasCompetition ? `
+                                        <span class="text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-sm flex items-center gap-1">
+                                            <i class="fa-solid fa-award"></i> 자체대회
+                                        </span>
+                                    ` : ''}
+                                </div>
+                                ${!isAdminLoggedIn ? `
+                                    <label class="flex items-center gap-1.5 text-xs text-slate-600 font-medium cursor-pointer select-none bg-slate-50 hover:bg-slate-100 px-2 py-1 rounded-lg border border-slate-200 transition">
+                                        <input type="checkbox" onchange="toggleCompare(${item.id})" ${isChecked ? 'checked' : ''} class="w-3.5 h-3.5 text-navy-800 rounded focus:ring-navy-800">
+                                        <span>비교함</span>
+                                    </label>
+                                ` : ''}
+                            </div>
+
+                            <!-- Name & Dept -->
+                            <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-navy-800 transition break-keep flex items-center gap-2 flex-wrap">
+                                ${item.name}
+                                ${bestJ ? `<span title="전형 중 가장 좋은 판정" class="text-xs">${judgeBadge(bestJ)}</span>` : ''}
+                            </h3>
+                            <p class="text-xs font-semibold text-slate-600 mt-0.5 break-keep">${item.dept}</p>
+
+                            <!-- Commute Badge -->
+                            <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-2.5 flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-7 h-7 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xs shadow-sm">
+                                        <i class="fa-solid fa-train"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[10px] text-slate-400 block leading-tight">동탄역 출발 기준</span>
+                                        <span class="text-xs font-bold text-slate-800">통학 소요시간</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-extrabold px-2.5 py-1 rounded-lg border ${!isNum(item.commuteMinutes) ? 'bg-slate-100 text-slate-500 border-slate-300' : item.commuteMinutes <= 40 ? 'bg-emerald-100 text-emerald-800 border-emerald-300' : (item.commuteMinutes <= 60 ? 'bg-sky-100 text-sky-800 border-sky-300' : 'bg-amber-100 text-amber-800 border-amber-300')}">
+                                    ${fmtCommute(item.commuteMinutes)}
+                                </span>
+                            </div>
+
+                            <!-- Guidelines Summary -->
+                            <div class="mt-4 bg-slate-50/80 rounded-xl p-3 border border-slate-200">
+                                ${guidelineTabsHtml}
+                                <div class="flex justify-between items-center text-[11px] text-slate-500 font-bold mb-1">
+                                    <span>${activeG.name || '모집전형'}</span>
+                                    <span class="text-navy-800">${activeG.examType || ''}</span>
+                                </div>
+                                ${gradeBoxesHtml}
+                            </div>
+
+                            <!-- Cert / Schedule chips -->
+                            ${(certChip || schedChip) ? `<div class="mt-3 flex flex-wrap gap-1">${certChip}${schedChip}</div>` : ''}
+
+                            <!-- Tags -->
+                            <div class="mt-2 flex flex-wrap gap-1">
+                                ${(item.tags || []).map(tag => `<span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md font-medium">${tag}</span>`).join('')}
+                            </div>
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex justify-between items-center text-xs">
+                            <span class="text-slate-500 text-[11px] font-medium">
+                                전형 총 ${guidelines.length}개
+                            </span>
+                            <button type="button" onclick="openDetailModal(${item.id})" class="text-navy-800 font-bold hover:text-gold-600 transition flex items-center gap-1">
+                                상세정보 & 커리큘럼 <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += cardHtml;
+            });
+        }
+
+        function setCardGuidelineTab(univId, idx) {
+            activeGuidelineIndices[univId] = idx;
+            applyFilters();
+        }
+
+        // Comparison Drawer Logic
+        function toggleCompare(id) {
+            const idx = selectedCompareIds.indexOf(id);
+            if (idx > -1) {
+                selectedCompareIds.splice(idx, 1);
+            } else {
+                if (selectedCompareIds.length >= 4) {
+                    alert('비교함에는 최대 4개 대학까지 담을 수 있습니다.');
+                    applyFilters();
+                    return;
+                }
+                selectedCompareIds.push(id);
+            }
+            updateCompareBar();
+        }
+
+        function updateCompareBar() {
+            const bar = document.getElementById('compareBar');
+            const count = document.getElementById('compareCount');
+            const chips = document.getElementById('compareChips');
+            if (!bar || !count || !chips) return;
+
+            count.innerText = selectedCompareIds.length;
+            chips.innerHTML = '';
+
+            if (selectedCompareIds.length > 0) {
+                bar.classList.remove('translate-y-32', 'opacity-0');
+                bar.classList.add('translate-y-0', 'opacity-100');
+
+                selectedCompareIds.forEach(id => {
+                    const item = colleges.find(c => c.id === id);
+                    if (item) {
+                        chips.innerHTML += `
+                            <span class="bg-navy-800 text-gold-400 text-[11px] px-2 py-0.5 rounded-lg border border-gold-500/30 flex items-center gap-1 font-medium">
+                                ${item.name}
+                                <i class="fa-solid fa-xmark cursor-pointer hover:text-white" onclick="toggleCompare(${item.id}); applyFilters();"></i>
+                            </span>
+                        `;
+                    }
+                });
+            } else {
+                bar.classList.remove('translate-y-0', 'opacity-100');
+                bar.classList.add('translate-y-32', 'opacity-0');
+            }
+        }
+
+        function clearComparison() {
+            selectedCompareIds = [];
+            updateCompareBar();
+            applyFilters();
+        }
+
+        // Modal 1: Detail Modal & Admin Actions inside Modal
+        function openDetailModal(id) {
+            const item = colleges.find(c => c.id === id);
+            if (!item) return;
+            currentDetailUnivId = id;
+
+            document.getElementById('mTitle').innerText = item.name;
+            document.getElementById('mDept').innerText = item.dept;
+            document.getElementById('mDegree').innerText = item.degree || '2년제';
+            document.getElementById('mRegion').innerText = item.region || '수도권';
+            document.getElementById('mCommuteTime').innerText = isNum(item.commuteMinutes) ? `동탄역에서 약 ${item.commuteMinutes}분 소요` : '통학시간 확인 중';
+            document.getElementById('mCommuteRoute').innerText = item.commuteRoute || '동탄역 출발 대중교통 이용';
+
+            // New Contact & Address fields
+            const phoneEl = document.getElementById('mContactPhoneLink');
+            const phoneVal = item.contactPhone || '문의처 정보 없음';
+            phoneEl.innerText = phoneVal;
+            phoneEl.href = item.contactPhone ? `tel:${item.contactPhone.replace(/[^0-9]/g, '')}` : '#';
+
+            const urlEl = document.getElementById('mAdmissionsUrl');
+            if (item.admissionsUrl) {
+                urlEl.href = item.admissionsUrl;
+                urlEl.classList.remove('hidden');
+            } else {
+                urlEl.href = '#';
+                urlEl.classList.add('hidden');
+            }
+
+            document.getElementById('mAddress').innerText = item.address || '주소 정보 미입력';
+
+            const compBadge = document.getElementById('mCompetitionBadge');
+            const compBox = document.getElementById('mCompetitionBox');
+            const compInfo = document.getElementById('mCompetitionInfo');
+
+            if (item.hasCompetition) {
+                compBadge.classList.remove('hidden');
+                compBox.classList.remove('hidden');
+                compInfo.innerText = item.competitionInfo || '자체 고교생 제과제빵 경진대회를 개최하며 입상 시 특별전형 지원 및 가산점 혜택을 제공합니다.';
+            } else {
+                compBadge.classList.add('hidden');
+                compBox.classList.add('hidden');
+            }
+
+            // Schedule
+            const four = is4yr(item);
+            const schedRows = [
+                [four ? '수시 원서접수' : '수시 1차 접수', item.schedule1],
+                ...(four ? [] : [['수시 2차 접수', item.schedule2]]),
+                ['면접·실기 / 메모', item.scheduleNote]
+            ];
+            document.getElementById('mSchedule').innerHTML = schedRows.map(([label, val]) => `
+                <div class="flex justify-between gap-2">
+                    <span class="text-slate-500 font-semibold shrink-0">${label}</span>
+                    <span class="text-right break-keep ${val ? 'font-bold text-slate-800' : 'text-slate-400'}">${val ? escapeHtml(val) : '입력 예정'}</span>
+                </div>`).join('');
+
+            // Certificate bonus
+            const certBox = document.getElementById('mCertBox');
+            const certEl = document.getElementById('mCertBonus');
+            const certMap = {
+                yes: { box: 'bg-emerald-50 border-emerald-300', head: '<span class="font-extrabold text-emerald-700"><i class="fa-solid fa-circle-check mr-1"></i>가산점 있음</span>' },
+                no: { box: 'bg-slate-50 border-slate-200', head: '<span class="font-bold text-slate-500">가산점 없음</span>' },
+                unknown: { box: 'bg-slate-50 border-slate-200', head: '<span class="font-bold text-slate-400">확인 중</span>' }
+            };
+            const cm = certMap[item.certBonus] || certMap.unknown;
+            certBox.className = `border rounded-xl p-4 ${cm.box}`;
+            certEl.innerHTML = cm.head + (item.certBonusInfo ? `<p class="mt-1 text-slate-700 leading-relaxed break-keep">${escapeHtml(item.certBonusInfo)}</p>` : '');
+
+            // Guidelines Table
+            document.getElementById('mGradeHead1').innerText = four ? '수시 (최저/평균)' : '수시 1차 (최저/평균)';
+            const showG2Col = !four && (item.guidelines || []).some(hasG2);
+            document.getElementById('mGradeHead2').innerText = showG2Col ? '수시 2차 (최저/평균)' : (four ? '전년도 (최저/평균)' : '전년도 1차 (최저/평균)');
+            const tbody = document.getElementById('mGuidelinesBody');
+            tbody.innerHTML = '';
+            (item.guidelines || []).forEach(g => {
+                const j1 = judgeGrade(myGrade, g.grade1Avg, g.grade1Min);
+                const j2 = four ? null : judgeGrade(myGrade, g.grade2Avg, g.grade2Min);
+                const judgeCell = myGrade === null
+                    ? '<span class="text-[10px] text-slate-400">내신 입력 시 표시</span>'
+                    : (j1 || j2)
+                        ? `${j1 ? `<div>${four ? '' : '<span class="text-[10px] text-slate-400">1차</span> '}${judgeBadge(j1, true)}</div>` : ''}${j2 ? `<div class="mt-0.5"><span class="text-[10px] text-slate-400">2차</span> ${judgeBadge(j2, true)}</div>` : ''}`
+                        : '<span class="text-[10px] text-slate-400">입결 미공개</span>';
+                tbody.innerHTML += `
+                    <tr>
+                        <td class="p-2.5 font-bold text-slate-800">${g.name || '기본 전형'}${g.note ? `<div class="text-[10px] font-medium text-slate-500 mt-0.5 break-keep">${escapeHtml(g.note)}</div>` : ''}</td>
+                        <td class="p-2.5 text-center">
+                            ${fmtGrade(g.grade1Min)} / <span class="font-bold text-amber-600">${fmtGrade(g.grade1Avg)}</span>
+                            ${g.rate1 ? `<div class="text-[10px] text-slate-500">경쟁률 ${escapeHtml(g.rate1)}</div>` : ''}
+                            ${(showG2Col && hasPrev(g)) ? `<div class="text-[10px] text-slate-400 mt-0.5 break-keep">전년도: ${prevSummary(g)}</div>` : ''}
+                        </td>
+                        <td class="p-2.5 text-center whitespace-nowrap">${showG2Col
+                            ? `${fmtGrade(g.grade2Min)} / <span class="font-bold text-amber-600">${fmtGrade(g.grade2Avg)}</span>`
+                            : hasPrev(g)
+                                ? `${(isNum(g.prevMin) || isNum(g.prevAvg)) ? `<span class="text-slate-600">${fmtGrade(g.prevMin)} / ${fmtGrade(g.prevAvg)}</span>` : ''}
+                                   ${g.prevText ? `<div class="text-[11px] text-slate-600">${escapeHtml(g.prevText)}</div>` : ''}
+                                   ${g.prevRate ? `<div class="text-[10px] text-slate-400">경쟁률 ${escapeHtml(g.prevRate)}</div>` : ''}`
+                                : '<span class="text-slate-400">-</span>'}</td>
+                        <td class="p-2.5 text-center whitespace-nowrap">${judgeCell}</td>
+                        <td class="p-2.5 text-slate-700">${g.examType || '-'}</td>
+                        <td class="p-2.5 text-slate-600">${g.capacity || '-'}</td>
+                    </tr>
+                `;
+            });
+
+            document.getElementById('mExamNote').innerText = item.examNote || '학과 특이사항 없음';
+
+            // Semesters Grid
+            const semContainer = document.getElementById('mSemesterContainer');
+            semContainer.innerHTML = '';
+            const semesters = item.semesters && item.semesters.length > 0 ? item.semesters : [
+                { name: "커리큘럼", subjects: "학기별 커리큘럼 정보 입력 예정" }
+            ];
+
+            semesters.forEach(s => {
+                semContainer.innerHTML += `
+                    <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl">
+                        <span class="text-xs font-bold text-navy-900 bg-white px-2 py-0.5 rounded border border-slate-200 inline-block mb-1">${s.name}</span>
+                        <p class="text-xs text-slate-700 font-medium leading-relaxed break-keep">${s.subjects || '강의 내용 정보 입력 예정'}</p>
+                    </div>
+                `;
+            });
+
+            const mTags = document.getElementById('mTags');
+            mTags.innerHTML = '';
+            (item.tags || []).forEach(t => {
+                mTags.innerHTML += `<span class="text-xs bg-amber-50 text-amber-900 border border-amber-200 px-2.5 py-1 rounded-lg font-medium">${t}</span>`;
+            });
+
+            // Admin Buttons in Detail Modal
+            const adminActions = document.getElementById('mAdminActions');
+            const delBtn = document.getElementById('mDeleteBtn');
+            const editBtn = document.getElementById('mEditBtn');
+
+            if (isAdminLoggedIn) {
+                adminActions.classList.remove('hidden');
+                adminActions.classList.add('flex');
+                delBtn.onclick = function() {
+                    closeDetailModal();
+                    deleteUniversity(id);
+                };
+                editBtn.onclick = function() {
+                    closeDetailModal();
+                    openUniversityFormModal(id);
+                };
+            } else {
+                adminActions.classList.remove('flex');
+                adminActions.classList.add('hidden');
+            }
+
+            const modal = document.getElementById('detailModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeDetailModal() {
+            const modal = document.getElementById('detailModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // Modal 2: Comparison Modal Table
+        function openCompareModal() {
+            if (selectedCompareIds.length === 0) return;
+            const selectedData = colleges.filter(c => selectedCompareIds.includes(c.id));
+            const container = document.getElementById('compareTableContainer');
+
+            let html = `
+                <table class="w-full text-left border-collapse border border-slate-200 text-xs">
+                    <thead>
+                        <tr class="bg-navy-950 text-white divide-x divide-slate-800">
+                            <th class="p-3 w-32 font-semibold">비교 항목</th>
+                            ${selectedData.map(c => `
+                                <th class="p-3 font-extrabold text-gold-400 text-center">
+                                    <div class="text-sm text-white break-keep">${c.name} (${c.degree || '2년제'})</div>
+                                    <div class="text-[11px] font-normal text-slate-300 mt-0.5 break-keep">${c.dept}</div>
+                                </th>
+                            `).join('')}
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white">
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">입시 홈페이지 / 전화</td>
+                            ${selectedData.map(c => `
+                                <td class="p-3 text-center">
+                                    ${c.admissionsUrl ? `<a href="${c.admissionsUrl}" target="_blank" class="text-navy-900 font-bold underline hover:text-gold-600 block mb-1">홈페이지 이동</a>` : '<span class="text-slate-400 block mb-1">홈페이지 미입력</span>'}
+                                    <span class="text-slate-600 font-semibold">${c.contactPhone || '전화번호 미입력'}</span>
+                                </td>
+                            `).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">학교 주소</td>
+                            ${selectedData.map(c => `<td class="p-3 text-center text-slate-600 break-keep">${c.address || '-'}</td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">지역 / 통학시간</td>
+                            ${selectedData.map(c => `<td class="p-3 text-center font-bold text-amber-800">${c.region || '-'} (${fmtCommute(c.commuteMinutes)})</td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">자체대회 개최 여부</td>
+                            ${selectedData.map(c => `<td class="p-3 text-center font-bold ${c.hasCompetition ? 'text-amber-600' : 'text-slate-400'}">${c.hasCompetition ? '<i class="fa-solid fa-award mr-1"></i>개최 (' + (c.competitionInfo || '자체대회 보유') + ')' : '미개최'}</td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">원서접수 일정</td>
+                            ${selectedData.map(c => `<td class="p-3 text-center text-slate-700 break-keep">
+                                <div>${is4yr(c) ? '수시' : '1차'}: <b>${c.schedule1 ? escapeHtml(c.schedule1) : '<span class="text-slate-400 font-normal">입력 예정</span>'}</b></div>
+                                ${is4yr(c) ? '' : `<div>2차: <b>${c.schedule2 ? escapeHtml(c.schedule2) : '<span class="text-slate-400 font-normal">입력 예정</span>'}</b></div>`}
+                            </td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">기능사 가산점</td>
+                            ${selectedData.map(c => `<td class="p-3 text-center break-keep ${c.certBonus === 'yes' ? 'text-emerald-700 font-bold' : 'text-slate-400'}">
+                                ${c.certBonus === 'yes' ? '있음' : (c.certBonus === 'no' ? '없음' : '확인 중')}
+                                ${c.certBonusInfo ? `<div class="text-[11px] font-normal text-slate-600 mt-0.5">${escapeHtml(c.certBonusInfo)}</div>` : ''}
+                            </td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">모집요강 (전형별)</td>
+                            ${selectedData.map(c => `
+                                <td class="p-3 space-y-2">
+                                    ${(c.guidelines || []).map(g => `
+                                        <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
+                                            <div class="font-bold text-navy-900 mb-0.5">${g.name} (${g.examType})</div>
+                                            <div class="text-[11px] text-slate-600">${is4yr(c) ? '수시' : '수시1차'}: ${fmtGrade(g.grade1Min)} / <b class="text-amber-600">${fmtGrade(g.grade1Avg)}</b> ${g.rate1 ? `<span class="text-slate-400">(${escapeHtml(g.rate1)})</span>` : ''} ${judgeBadge(judgeGrade(myGrade, g.grade1Avg, g.grade1Min), true)}</div>
+                                            ${hasPrev(g) ? `<div class="text-[10px] text-slate-400">전년도: ${prevSummary(g)}</div>` : ''}
+                                            ${(is4yr(c) || !hasG2(g)) ? '' : `<div class="text-[11px] text-slate-600">수시2차: ${fmtGrade(g.grade2Min)} / <b class="text-amber-600">${fmtGrade(g.grade2Avg)}</b> ${judgeBadge(judgeGrade(myGrade, g.grade2Avg, g.grade2Min), true)}</div>`}
+                                        </div>
+                                    `).join('')}
+                                </td>
+                            `).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">핵심 커리큘럼</td>
+                            ${selectedData.map(c => `<td class="p-3 leading-relaxed text-slate-600 break-keep">${c.curriculum || '-'}</td>`).join('')}
+                        </tr>
+                        <tr class="divide-x divide-slate-200">
+                            <td class="p-3 font-bold bg-slate-50 text-slate-700">학원 입시 코멘트</td>
+                            ${selectedData.map(c => `<td class="p-3 leading-relaxed text-slate-600 break-keep">${c.examNote || '-'}</td>`).join('')}
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+
+            container.innerHTML = html;
+            const modal = document.getElementById('compareModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCompareModal() {
+            const modal = document.getElementById('compareModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // Admin Login Modal
+        function openAdminLoginModal() {
+            if (isAdminLoggedIn) {
+                logoutAdmin();
+                return;
+            }
+            document.getElementById('adminPasswordInput').value = '';
+            const modal = document.getElementById('adminLoginModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeAdminLoginModal() {
+            const modal = document.getElementById('adminLoginModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function submitAdminLogin() {
+            const inputPw = (document.getElementById('adminPasswordInput').value || '').trim();
+            if (hashPw(inputPw) === ADMIN_PW_HASH) {
+                isAdminLoggedIn = true;
+                document.getElementById('adminTopBar').classList.remove('hidden');
+                if (STUDENT_PW_HASH === DEFAULT_STUDENT_HASH || ADMIN_PW_HASH === DEFAULT_ADMIN_HASH) {
+                    alert('아직 기본 비밀번호(수강생 0000 / 관리자 1234)를 쓰고 있어요.\n[학원명/비밀번호 설정]에서 꼭 바꿔 주세요.');
+                }
+                document.getElementById('adminBtnText').innerText = '관리자 로그아웃';
+                closeAdminLoginModal();
+                renderRegionTabs();
+                applyFilters();
+            } else {
+                alert('비밀번호가 일치하지 않습니다.');
+            }
+        }
+
+        function logoutAdmin() {
+            isAdminLoggedIn = false;
+            document.getElementById('adminTopBar').classList.add('hidden');
+            document.getElementById('adminBtnText').innerText = '관리자 모드';
+            renderRegionTabs();
+            applyFilters();
+        }
+
+        // Settings Modal (Student & Admin Passwords)
+        function openSettingsModal() {
+            document.getElementById('setAcademyName').value = academyName;
+            document.getElementById('setAdmissionYear').value = admissionYearText;
+            document.getElementById('setStudentPassword').value = '';
+            document.getElementById('setAdminPassword').value = '';
+            const modal = document.getElementById('settingsModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeSettingsModal() {
+            const modal = document.getElementById('settingsModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function saveSettings() {
+            const newName = document.getElementById('setAcademyName').value.trim();
+            const newStudentPw = document.getElementById('setStudentPassword').value.trim();
+            const newAdminPw = document.getElementById('setAdminPassword').value.trim();
+
+            const newYear = document.getElementById('setAdmissionYear').value.trim();
+
+            if (newName) academyName = newName;
+            if (newYear) admissionYearText = newYear;
+            if (newStudentPw) STUDENT_PW_HASH = hashPw(newStudentPw);
+            if (newAdminPw) ADMIN_PW_HASH = hashPw(newAdminPw);
+            saveSettingsToLocal();
+            updateAcademyNameDisplays();
+            closeSettingsModal();
+            alert('학원명 및 비밀번호 설정이 저장되었습니다.');
+        }
+
+        // Admin Form Modal (Add / Edit University)
+        let currentEditingGuidelineRows = [];
+        let currentEditingSemesterRows = [];
+
+        function toggleCompetitionFieldDisplay() {
+            const chk = document.getElementById('fHasCompetition').checked;
+            const field = document.getElementById('fCompetitionField');
+            if (chk) field.classList.remove('hidden');
+            else field.classList.add('hidden');
+        }
+
+        function autoGenerateSemestersByDegree() {
+            const degree = document.getElementById('fDegree').value;
+            let targetCount = 4;
+            if (degree === '3년제') targetCount = 6;
+            if (degree === '4년제') targetCount = 8;
+
+            const existing = [...currentEditingSemesterRows];
+            currentEditingSemesterRows = [];
+
+            for (let i = 1; i <= targetCount; i++) {
+                const year = Math.ceil(i / 2);
+                const sem = (i % 2 === 1) ? 1 : 2;
+                const nameStr = `${year}학년 ${sem}학기`;
+                const found = existing.find(e => e.name === nameStr);
+
+                if (found) {
+                    currentEditingSemesterRows.push(found);
+                } else {
+                    currentEditingSemesterRows.push({
+                        name: nameStr,
+                        subjects: ""
+                    });
+                }
+            }
+            renderSemesterFormRows();
+        }
+
+        function openUniversityFormModal(univId = null) {
+            const titleEl = document.getElementById('univFormTitle');
+
+            if (univId) {
+                titleEl.innerText = '대학 정보 및 요강 수정';
+                const item = colleges.find(c => c.id === univId);
+                if (item) {
+                    document.getElementById('fId').value = item.id;
+                    document.getElementById('fName').value = item.name || '';
+                    document.getElementById('fDept').value = item.dept || '';
+                    document.getElementById('fDegree').value = item.degree || '2년제';
+                    document.getElementById('fRegion').value = item.region || '';
+                    document.getElementById('fCommuteMinutes').value = isNum(item.commuteMinutes) ? item.commuteMinutes : '';
+                    document.getElementById('fCommuteRoute').value = item.commuteRoute || '';
+                    document.getElementById('fAdmissionsUrl').value = item.admissionsUrl || '';
+                    document.getElementById('fContactPhone').value = item.contactPhone || '';
+                    document.getElementById('fAddress').value = item.address || '';
+                    document.getElementById('fCurriculum').value = item.curriculum || '';
+                    document.getElementById('fExamNote').value = item.examNote || '';
+                    document.getElementById('fTags').value = (item.tags || []).join(', ');
+                    document.getElementById('fHasCompetition').checked = !!item.hasCompetition;
+                    document.getElementById('fCompetitionInfo').value = item.competitionInfo || '';
+                    document.getElementById('fSchedule1').value = item.schedule1 || '';
+                    document.getElementById('fSchedule2').value = item.schedule2 || '';
+                    document.getElementById('fScheduleNote').value = item.scheduleNote || '';
+                    document.getElementById('fCertBonus').value = item.certBonus || 'unknown';
+                    document.getElementById('fCertBonusInfo').value = item.certBonusInfo || '';
+
+                    currentEditingGuidelineRows = JSON.parse(JSON.stringify(item.guidelines || []));
+                    currentEditingSemesterRows = JSON.parse(JSON.stringify(item.semesters || []));
+                }
+            } else {
+                titleEl.innerText = '새 대학 추가';
+                document.getElementById('fId').value = '';
+                document.getElementById('fName').value = '';
+                document.getElementById('fDept').value = '';
+                document.getElementById('fDegree').value = '2년제';
+                document.getElementById('fRegion').value = '경기 오산';
+                document.getElementById('fCommuteMinutes').value = '';
+                document.getElementById('fCommuteRoute').value = '';
+                document.getElementById('fAdmissionsUrl').value = '';
+                document.getElementById('fContactPhone').value = '';
+                document.getElementById('fAddress').value = '';
+                document.getElementById('fCurriculum').value = '';
+                document.getElementById('fExamNote').value = '';
+                document.getElementById('fTags').value = '';
+                document.getElementById('fHasCompetition').checked = false;
+                document.getElementById('fCompetitionInfo').value = '';
+                document.getElementById('fSchedule1').value = '';
+                document.getElementById('fSchedule2').value = '';
+                document.getElementById('fScheduleNote').value = '';
+                document.getElementById('fCertBonus').value = 'unknown';
+                document.getElementById('fCertBonusInfo').value = '';
+
+                currentEditingGuidelineRows = [
+                    { name: "일반고 교과 전형", grade1Min: null, grade1Avg: null, grade2Min: null, grade2Avg: null, examType: "학생부 100%", capacity: "" },
+                    { name: "일반고 면접 전형", grade1Min: null, grade1Avg: null, grade2Min: null, grade2Avg: null, examType: "학생부 60% + 면접 40%", capacity: "" }
+                ];
+                currentEditingSemesterRows = [
+                    { name: "1학년 1학기", subjects: "기초 제과제빵 실습, 재료학" },
+                    { name: "1학년 2학기", subjects: "유럽 베이커리, 디저트 실습" },
+                    { name: "2학년 1학기", subjects: "공예 아트 실습, 케이크 데코" },
+                    { name: "2학년 2학기", subjects: "창업 실무 및 현장 실습" }
+                ];
+            }
+
+            toggleCompetitionFieldDisplay();
+            renderGuidelineFormRows();
+            renderSemesterFormRows();
+
+            const modal = document.getElementById('univFormModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function renderGuidelineFormRows() {
+            const container = document.getElementById('guidelinesContainer');
+            if (!container) return;
+            container.innerHTML = '';
+
+            currentEditingGuidelineRows.forEach((g, idx) => {
+                const rowHtml = `
+                    <div class="bg-white p-3 rounded-lg border border-amber-200 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-amber-900">전형 #${idx+1}</span>
+                            <button type="button" onclick="removeGuidelineRow(${idx})" class="text-rose-500 hover:text-rose-700 text-xs">
+                                <i class="fa-solid fa-trash-can"></i> 삭제
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="text" value="${escapeHtml(g.name)}" onchange="updateGuidelineData(${idx}, 'name', this.value)" placeholder="전형명 (예: 일반고 면접전형)" class="p-1.5 bg-slate-50 border rounded text-xs font-bold">
+                            <input type="text" value="${escapeHtml(g.examType)}" onchange="updateGuidelineData(${idx}, 'examType', this.value)" placeholder="반영비율 (예: 학생부 60%+면접 40%)" class="p-1.5 bg-slate-50 border rounded text-xs">
+                            <input type="text" value="${escapeHtml(g.capacity)}" onchange="updateGuidelineData(${idx}, 'capacity', this.value)" placeholder="모집인원 (예: 수시1차 40명)" class="p-1.5 bg-slate-50 border rounded text-xs">
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-[11px]">
+                            ${[['grade1Min','수시1 최저',''],['grade1Avg','수시1 평균',' font-bold text-amber-600'],['grade2Min','수시2 최저',''],['grade2Avg','수시2 평균',' font-bold text-amber-600']].map(([f, label, extra]) => `
+                                <div><span class="text-slate-400">${label}</span><input type="number" step="0.01" min="1" max="9" value="${isNum(g[f]) ? g[f] : ''}" placeholder="미공개" onchange="updateGuidelineData(${idx}, '${f}', this.value === '' ? null : parseFloat(this.value))" class="w-full p-1 bg-slate-50 border rounded${extra}"></div>
+                            `).join('')}
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-[11px]">
+                            <div><span class="text-slate-400">올해 경쟁률</span><input type="text" value="${escapeHtml(g.rate1)}" placeholder="예: 9.9:1" onchange="updateGuidelineData(${idx}, 'rate1', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
+                            <div><span class="text-slate-400">전년도 최저</span><input type="number" step="0.01" value="${isNum(g.prevMin) ? g.prevMin : ''}" placeholder="미공개" onchange="updateGuidelineData(${idx}, 'prevMin', this.value === '' ? null : parseFloat(this.value))" class="w-full p-1 bg-slate-50 border rounded"></div>
+                            <div><span class="text-slate-400">전년도 평균</span><input type="number" step="0.01" value="${isNum(g.prevAvg) ? g.prevAvg : ''}" placeholder="미공개" onchange="updateGuidelineData(${idx}, 'prevAvg', this.value === '' ? null : parseFloat(this.value))" class="w-full p-1 bg-slate-50 border rounded"></div>
+                            <div><span class="text-slate-400">전년도 경쟁률</span><input type="text" value="${escapeHtml(g.prevRate)}" placeholder="예: 9.5:1" onchange="updateGuidelineData(${idx}, 'prevRate', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 text-[11px]">
+                            <div><span class="text-slate-400">전년도 기타 (예: 70%컷 3.53)</span><input type="text" value="${escapeHtml(g.prevText)}" placeholder="숫자 칸에 안 맞는 정보만" onchange="updateGuidelineData(${idx}, 'prevText', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
+                            <div><span class="text-slate-400">비고</span><input type="text" value="${escapeHtml(g.note)}" placeholder="예: 70%컷 1.95, 2개 학기 반영" onchange="updateGuidelineData(${idx}, 'note', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
+                        </div>
+                        <p class="text-[10px] text-slate-400">입결이 공개되지 않은 칸은 비워 두면 '미공개'로 표시돼요. 4년제는 수시2 칸을 비워 두세요.</p>
+                    </div>
+                `;
+                container.innerHTML += rowHtml;
+            });
+        }
+
+        function addGuidelineRow() {
+            currentEditingGuidelineRows.push({
+                name: "새 전형",
+                grade1Min: null,
+                grade1Avg: null,
+                grade2Min: null,
+                grade2Avg: null,
+                examType: "학생부 100%",
+                capacity: ""
+            });
+            renderGuidelineFormRows();
+        }
+
+        function removeGuidelineRow(idx) {
+            currentEditingGuidelineRows.splice(idx, 1);
+            renderGuidelineFormRows();
+        }
+
+        function updateGuidelineData(idx, field, value) {
+            if (currentEditingGuidelineRows[idx]) {
+                currentEditingGuidelineRows[idx][field] = value;
+            }
+        }
+
+        function renderSemesterFormRows() {
+            const container = document.getElementById('semestersContainer');
+            if (!container) return;
+            container.innerHTML = '';
+
+            currentEditingSemesterRows.forEach((s, idx) => {
+                const rowHtml = `
+                    <div class="bg-white p-2.5 rounded-lg border border-sky-200 flex gap-2 items-center">
+                        <input type="text" value="${escapeHtml(s.name)}" onchange="updateSemesterData(${idx}, 'name', this.value)" placeholder="학기명 (예: 1학년 1학기)" class="w-32 p-1.5 bg-slate-50 border border-slate-200 rounded font-semibold text-xs shrink-0">
+                        <input type="text" value="${escapeHtml(s.subjects)}" onchange="updateSemesterData(${idx}, 'subjects', this.value)" placeholder="배우는 과목 (예: 기초 제과제빵 실습, 위생학)" class="flex-1 p-1.5 bg-slate-50 border border-slate-200 rounded text-xs">
+                        <button type="button" onclick="removeSemesterRow(${idx})" class="text-rose-500 hover:text-rose-700 text-xs p-1">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                `;
+                container.innerHTML += rowHtml;
+            });
+        }
+
+        function addSemesterRow() {
+            const nextNum = currentEditingSemesterRows.length + 1;
+            currentEditingSemesterRows.push({
+                name: `${Math.ceil(nextNum/2)}학년 ${nextNum%2 === 1 ? 1 : 2}학기`,
+                subjects: ""
+            });
+            renderSemesterFormRows();
+        }
+
+        function removeSemesterRow(idx) {
+            currentEditingSemesterRows.splice(idx, 1);
+            renderSemesterFormRows();
+        }
+
+        function updateSemesterData(idx, field, value) {
+            if (currentEditingSemesterRows[idx]) {
+                currentEditingSemesterRows[idx][field] = value;
+            }
+        }
+
+        function closeUniversityFormModal() {
+            const modal = document.getElementById('univFormModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function saveUniversityForm() {
+            const name = document.getElementById('fName').value.trim();
+            const dept = document.getElementById('fDept').value.trim();
+            const degree = document.getElementById('fDegree').value;
+            const region = document.getElementById('fRegion').value.trim();
+            const commuteRaw = parseInt(document.getElementById('fCommuteMinutes').value);
+            const commuteMinutes = isNaN(commuteRaw) ? null : commuteRaw;
+            const commuteRoute = document.getElementById('fCommuteRoute').value.trim();
+            const admissionsUrl = document.getElementById('fAdmissionsUrl').value.trim();
+            const contactPhone = document.getElementById('fContactPhone').value.trim();
+            const address = document.getElementById('fAddress').value.trim();
+            const curriculum = document.getElementById('fCurriculum').value.trim();
+            const examNote = document.getElementById('fExamNote').value.trim();
+            const tagsRaw = document.getElementById('fTags').value.trim();
+            const hasCompetition = document.getElementById('fHasCompetition').checked;
+            const competitionInfo = document.getElementById('fCompetitionInfo').value.trim();
+            const extra = {
+                schedule1: document.getElementById('fSchedule1').value.trim(),
+                schedule2: document.getElementById('fSchedule2').value.trim(),
+                scheduleNote: document.getElementById('fScheduleNote').value.trim(),
+                certBonus: document.getElementById('fCertBonus').value,
+                certBonusInfo: document.getElementById('fCertBonusInfo').value.trim()
+            };
+
+            if (!name || !dept) {
+                alert('대학명과 학과명은 필수 입력 항목입니다.');
+                return;
+            }
+
+            const tags = tagsRaw ? tagsRaw.split(',').map(t => t.trim().startsWith('#') ? t.trim() : '#' + t.trim()) : ['#제과제빵'];
+            const idVal = document.getElementById('fId').value;
+
+            if (idVal) {
+                const univId = parseInt(idVal);
+                const item = colleges.find(c => c.id === univId);
+                if (item) {
+                    item.name = name;
+                    item.dept = dept;
+                    item.degree = degree;
+                    item.region = region;
+                    item.commuteMinutes = commuteMinutes;
+                    item.commuteRoute = commuteRoute;
+                    item.admissionsUrl = admissionsUrl;
+                    item.contactPhone = contactPhone;
+                    item.address = address;
+                    item.curriculum = curriculum;
+                    item.examNote = examNote;
+                    item.tags = tags;
+                    item.hasCompetition = hasCompetition;
+                    item.competitionInfo = competitionInfo;
+                    item.guidelines = currentEditingGuidelineRows;
+                    item.semesters = currentEditingSemesterRows;
+                    Object.assign(item, extra);
+                    normalizeCollege(item);
+                }
+            } else {
+                const newUniv = {
+                    id: Date.now(),
+                    name,
+                    dept,
+                    degree,
+                    region,
+                    commuteMinutes,
+                    commuteRoute,
+                    admissionsUrl,
+                    contactPhone,
+                    address,
+                    curriculum,
+                    examNote,
+                    tags,
+                    hasCompetition,
+                    competitionInfo,
+                    guidelines: currentEditingGuidelineRows,
+                    semesters: currentEditingSemesterRows,
+                    ...extra
+                };
+                colleges.push(normalizeCollege(newUniv));
+            }
+
+            saveCollegesToLocal();
+            closeUniversityFormModal();
+            renderRegionTabs();
+            applyFilters();
+            alert('대학 정보가 저장되었습니다.');
+        }
+
+        function deleteUniversity(univId) {
+            if (confirm('해당 대학 정보를 정말로 삭제하시겠습니까?')) {
+                colleges = colleges.filter(c => c.id !== univId);
+                saveCollegesToLocal();
+                renderRegionTabs();
+                applyFilters();
+            }
+        }
+
+        // Backup & Restore JSON
+        function exportJSONData() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(colleges, null, 2));
+            const dlAnchorElem = document.createElement('a');
+            dlAnchorElem.setAttribute("href", dataStr);
+            dlAnchorElem.setAttribute("download", "제과제빵대학_백업데이터.json");
+            dlAnchorElem.click();
+        }
+
+        function importJSONData(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const imported = JSON.parse(e.target.result);
+                    if (Array.isArray(imported)) {
+                        colleges = imported.map(normalizeCollege);
+                        saveCollegesToLocal();
+                        renderRegionTabs();
+                        applyFilters();
+                        alert('데이터가 성공적으로 복원되었습니다.');
+                    }
+                } catch (err) {
+                    alert('올바른 JSON 데이터 파일이 아닙니다.');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Download Standalone HTML File for GitHub Deployment
+        function downloadStandaloneHTML() {
+            if (STUDENT_PW_HASH === DEFAULT_STUDENT_HASH || ADMIN_PW_HASH === DEFAULT_ADMIN_HASH) {
+                if (!confirm('아직 기본 비밀번호(수강생 0000 / 관리자 1234)예요.\n그래도 배포용 파일을 만들까요?')) return;
+            }
+
+            // 지금 화면 상태가 아니라 "처음 열었을 때" 상태로 되돌린 복사본을 만듭니다
+            const clone = document.documentElement.cloneNode(true);
+            const q = sel => clone.querySelector(sel);
+
+            q('#studentAccessGate').classList.remove('hidden');      // 잠금 화면은 항상 켜진 상태로
+            q('#adminTopBar').classList.add('hidden');               // 관리자 바 숨김
+            q('#adminLoginBtn').classList.remove('hidden');
+            q('#adminBtnText').textContent = '관리자 모드';
+            ['#universityGrid', '#regionTabs', '#compareChips', '#compareTableContainer', '#mGuidelinesBody',
+             '#mSemesterContainer', '#mTags', '#guidelinesContainer', '#semestersContainer', '#mSchedule', '#mCertBonus'
+            ].forEach(sel => { const el = q(sel); if (el) el.innerHTML = ''; });
+            ['detailModal', 'compareModal', 'adminLoginModal', 'settingsModal', 'univFormModal'].forEach(id => {
+                const el = q('#' + id); if (el) { el.classList.remove('flex'); el.classList.add('hidden'); }
+            });
+            const bar = q('#compareBar');
+            if (bar) { bar.classList.remove('translate-y-0', 'opacity-100'); bar.classList.add('translate-y-32', 'opacity-0'); }
+            // Tailwind가 실행 중에 자동으로 넣은 스타일 제거 (배포 파일에서 다시 생성됨)
+            clone.querySelectorAll('head style:not(#app-style):not(#fa-embedded)').forEach(el => el.remove());
+
+            let fullHTML = clone.outerHTML;
+            const savedAt = Date.now();
+            const jsStr = s => JSON.stringify(String(s)).replace(/</g, '\\u003c');
+            const jsonColleges = JSON.stringify(colleges, null, 4).replace(/</g, '\\u003c');
+
+            const reps = [
+                [/const initialCollegesData = \[[\s\S]*?\n\s*\];/, `const initialCollegesData = ${jsonColleges};`],
+                [/let academyName = (['"]).*?\1;/, `let academyName = ${jsStr(academyName)};`],
+                [/let admissionYearText = (['"]).*?\1;/, `let admissionYearText = ${jsStr(admissionYearText)};`],
+                [/let STUDENT_PW_HASH = '[0-9a-f]*';/, `let STUDENT_PW_HASH = '${STUDENT_PW_HASH}';`],
+                [/let ADMIN_PW_HASH = '[0-9a-f]*';/, `let ADMIN_PW_HASH = '${ADMIN_PW_HASH}';`],
+                [/const DATA_SAVED_AT = \d+;/, `const DATA_SAVED_AT = ${savedAt};`]
+            ];
+            for (const [re, val] of reps) {
+                if (!re.test(fullHTML)) { alert('배포 파일 생성 중 오류가 났어요. (데이터 위치를 찾지 못함)'); return; }
+                fullHTML = fullHTML.replace(re, () => val);
+            }
+
+            const blob = new Blob(["<!DOCTYPE html>\n" + fullHTML], { type: 'text/html;charset=utf-8;' });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "index.html";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            alert('배포용 index.html 파일이 저장되었습니다.\n\n· 대학 데이터와 학원명, 학년도 문구가 포함돼요.\n· 비밀번호는 암호화된 값으로만 들어가요.\n· 배포된 사이트에서는 관리자 버튼이 숨겨져요. (주소 끝에 ?admin 을 붙이면 보여요)');
+        }
+    </script>
+</body>
+</html>
