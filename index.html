@@ -825,7 +825,13 @@
         function is4yr(item) { return item && item.degree === '4년제'; }
         function fmtCommute(m) { return isNum(m) ? `약 ${m}분` : '확인 중'; }
         function hasG2(g) { return isNum(g.grade2Min) || isNum(g.grade2Avg); }
-        function hasPrev(g) { return isNum(g.prevMin) || isNum(g.prevAvg) || !!g.prevRate || !!g.prevText; }
+        function hasPrev(g) { return isNum(g.prevMin) || isNum(g.prevAvg) || !!g.prevRate || !!g.prevText || !!g.prevWait; }
+        // 예비순위: 숫자만 넣으면 "예비 N번까지", 글자는 그대로 (예: 충원 없음)
+        function fmtWait(v) {
+            const t = String(v == null ? '' : v).trim();
+            if (!t) return '';
+            return /^\d+$/.test(t) ? `예비 ${t}번까지` : escapeHtml(t);
+        }
         function prevSummary(g) {
             const parts = [];
             if (isNum(g.prevMin) || isNum(g.prevAvg)) {
@@ -833,6 +839,7 @@
             }
             if (g.prevText) parts.push(escapeHtml(g.prevText));
             if (g.prevRate) parts.push('경쟁률 ' + escapeHtml(g.prevRate));
+            if (g.prevWait) parts.push(fmtWait(g.prevWait));
             return parts.join(' · ');
         }
         function escapeHtml(s) {
@@ -2420,6 +2427,8 @@
             c.guidelines = (c.guidelines || []).map(g => ({
                 ...g,
                 rate1: g.rate1 || '',
+                wait1: g.wait1 == null ? '' : String(g.wait1),
+                prevWait: g.prevWait == null ? '' : String(g.prevWait),
                 ...splitPrev(g),
                 note: g.note || '',
                 grade1Min: toNum(g.grade1Min), grade1Avg: toNum(g.grade1Avg),
@@ -2579,6 +2588,7 @@
                             <span class="text-slate-300">/</span>
                             <span class="font-extrabold text-amber-600">${fmtGrade(activeG.grade1Avg)}</span>
                             ${activeG.rate1 ? `<span class="block text-[10px] text-slate-500 mt-0.5">경쟁률 ${escapeHtml(activeG.rate1)}</span>` : ''}
+                            ${activeG.wait1 ? `<span class="inline-block mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded bg-violet-50 text-violet-700 border border-violet-200">${fmtWait(activeG.wait1)}</span>` : ''}
                         </div>`;
                 let box2 = '';
                 if (!four && hasG2(activeG)) {
@@ -2600,6 +2610,7 @@
                                 <span class="font-extrabold text-slate-500">${fmtGrade(activeG.prevAvg)}</span>` : ''}
                             ${activeG.prevText ? `<span class="block font-bold text-slate-500 ${hasNums ? 'text-[10px]' : ''}">${escapeHtml(activeG.prevText)}</span>` : ''}
                             ${activeG.prevRate ? `<span class="block text-[10px] text-slate-400 mt-0.5">경쟁률 ${escapeHtml(activeG.prevRate)}</span>` : ''}
+                            ${activeG.prevWait ? `<span class="inline-block mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 border border-slate-200">${fmtWait(activeG.prevWait)}</span>` : ''}
                         </div>`;
                 }
                 const gradeBoxesHtml = guidelines.length === 0
@@ -2866,6 +2877,7 @@
                         <td class="p-2.5 text-center">
                             ${fmtGrade(g.grade1Min)} / <span class="font-bold text-amber-600">${fmtGrade(g.grade1Avg)}</span>
                             ${g.rate1 ? `<div class="text-[10px] text-slate-500">경쟁률 ${escapeHtml(g.rate1)}</div>` : ''}
+                            ${g.wait1 ? `<div class="text-[10px] font-bold text-violet-700">${fmtWait(g.wait1)}</div>` : ''}
                             ${(showG2Col && hasPrev(g)) ? `<div class="text-[10px] text-slate-400 mt-0.5 break-keep">전년도: ${prevSummary(g)}</div>` : ''}
                         </td>
                         <td class="p-2.5 text-center whitespace-nowrap">${showG2Col
@@ -2873,7 +2885,8 @@
                             : hasPrev(g)
                                 ? `${(isNum(g.prevMin) || isNum(g.prevAvg)) ? `<span class="text-slate-600">${fmtGrade(g.prevMin)} / ${fmtGrade(g.prevAvg)}</span>` : ''}
                                    ${g.prevText ? `<div class="text-[11px] text-slate-600">${escapeHtml(g.prevText)}</div>` : ''}
-                                   ${g.prevRate ? `<div class="text-[10px] text-slate-400">경쟁률 ${escapeHtml(g.prevRate)}</div>` : ''}`
+                                   ${g.prevRate ? `<div class="text-[10px] text-slate-400">경쟁률 ${escapeHtml(g.prevRate)}</div>` : ''}
+                                   ${g.prevWait ? `<div class="text-[10px] font-bold text-slate-500">${fmtWait(g.prevWait)}</div>` : ''}`
                                 : '<span class="text-slate-400">-</span>'}</td>
                         <td class="p-2.5 text-center whitespace-nowrap">${judgeCell}</td>
                         <td class="p-2.5 text-slate-700">${g.examType || '-'}</td>
@@ -3000,7 +3013,7 @@
                                     ${(c.guidelines || []).map(g => `
                                         <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
                                             <div class="font-bold text-navy-900 mb-0.5">${g.name} (${g.examType})</div>
-                                            <div class="text-[11px] text-slate-600">${is4yr(c) ? '수시' : '수시1차'}: ${fmtGrade(g.grade1Min)} / <b class="text-amber-600">${fmtGrade(g.grade1Avg)}</b> ${g.rate1 ? `<span class="text-slate-400">(${escapeHtml(g.rate1)})</span>` : ''} ${judgeBadge(judgeGrade(myGrade, g.grade1Avg, g.grade1Min), true)}</div>
+                                            <div class="text-[11px] text-slate-600">${is4yr(c) ? '수시' : '수시1차'}: ${fmtGrade(g.grade1Min)} / <b class="text-amber-600">${fmtGrade(g.grade1Avg)}</b> ${g.rate1 ? `<span class="text-slate-400">(${escapeHtml(g.rate1)})</span>` : ''} ${g.wait1 ? `<span class="text-violet-700 font-bold">${fmtWait(g.wait1)}</span>` : ''} ${judgeBadge(judgeGrade(myGrade, g.grade1Avg, g.grade1Min), true)}</div>
                                             ${hasPrev(g) ? `<div class="text-[10px] text-slate-400">전년도: ${prevSummary(g)}</div>` : ''}
                                             ${(is4yr(c) || !hasG2(g)) ? '' : `<div class="text-[11px] text-slate-600">수시2차: ${fmtGrade(g.grade2Min)} / <b class="text-amber-600">${fmtGrade(g.grade2Avg)}</b> ${judgeBadge(judgeGrade(myGrade, g.grade2Avg, g.grade2Min), true)}</div>`}
                                         </div>
@@ -3251,6 +3264,10 @@
                             <div><span class="text-slate-400">전년도 최저</span><input type="number" step="0.01" value="${isNum(g.prevMin) ? g.prevMin : ''}" placeholder="미공개" onchange="updateGuidelineData(${idx}, 'prevMin', this.value === '' ? null : parseFloat(this.value))" class="w-full p-1 bg-slate-50 border rounded"></div>
                             <div><span class="text-slate-400">전년도 평균</span><input type="number" step="0.01" value="${isNum(g.prevAvg) ? g.prevAvg : ''}" placeholder="미공개" onchange="updateGuidelineData(${idx}, 'prevAvg', this.value === '' ? null : parseFloat(this.value))" class="w-full p-1 bg-slate-50 border rounded"></div>
                             <div><span class="text-slate-400">전년도 경쟁률</span><input type="text" value="${escapeHtml(g.prevRate)}" placeholder="예: 9.5:1" onchange="updateGuidelineData(${idx}, 'prevRate', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 text-[11px]">
+                            <div><span class="text-violet-600 font-semibold">올해 최종 예비순위</span><input type="text" value="${escapeHtml(g.wait1)}" placeholder="숫자만 → 예비 N번까지 (예: 45)" onchange="updateGuidelineData(${idx}, 'wait1', this.value.trim())" class="w-full p-1 bg-violet-50 border border-violet-200 rounded"></div>
+                            <div><span class="text-slate-400">전년도 최종 예비순위</span><input type="text" value="${escapeHtml(g.prevWait)}" placeholder="예: 32 또는 충원 없음" onchange="updateGuidelineData(${idx}, 'prevWait', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
                         </div>
                         <div class="grid grid-cols-2 gap-2 text-[11px]">
                             <div><span class="text-slate-400">전년도 기타 (예: 70%컷 3.53)</span><input type="text" value="${escapeHtml(g.prevText)}" placeholder="숫자 칸에 안 맞는 정보만" onchange="updateGuidelineData(${idx}, 'prevText', this.value.trim())" class="w-full p-1 bg-slate-50 border rounded"></div>
